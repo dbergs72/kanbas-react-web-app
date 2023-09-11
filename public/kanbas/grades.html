@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .student-name {
-            text-align: left;
-        }
-        .grades-input-field {
-            text-align: center;
-            width: 50px;
-        }
-    </style>
 </head>
 <body>
 
 <table width="100%">
     <tbody>
-    <tr>
-        <td style="vertical-align: top;">
-            <ul style="margin-top: 0;">
-                <li><a href="#">Account</a></li>
+    <tr valign="baseline">
+        <!--   Left most column links     -->
+        <td>
+            <ul>
+                <li><a href="./profile/profile-sub-column.html">Account</a></li>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="courses-sub-column.html">Courses</a></li>
                 <li><a href="#">Calendar</a></li>
                 <li><a href="#">Inbox</a></li>
                 <li><a href="#">History</a></li>
@@ -31,13 +23,14 @@
                 <li><a href="#">Help</a></li>
             </ul>
         </td>
-        <td style="vertical-align: top;">
-            <ul style="margin-top: 0;">
-                <li><a href="#">Home</a></li>
+        <!--   Sub column links     -->
+        <td>
+            <ul>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="#">Modules</a></li>
                 <li><a href="#">Piazza</a></li>
                 <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="#">Assignments</a></li>
+                <li><a href="assignments/index.html">Assignments</a></li>
                 <li><a href="#">Quizzes</a></li>
                 <li><a href="grades.html">Grades</a></li>
                 <li><a href="#">People</a></li>
@@ -53,7 +46,7 @@
                 <li><a href="#">Settings</a></li>
             </ul>
         </td>
-        <td style="vertical-align: top;">
+        <td valign="baseline">
             <select id="grades-gradebook-dd">
                 <option selected value="GRDBK">Gradebook</option>
                 <option value="Option2">Option2</option>
@@ -79,7 +72,8 @@
                 <input type="text" id="grades-asgnmt-search" name="grades-asgnmt-search" placeholder="Search Assignments"><br><br>
                 <input type="submit" value="Apply Filters">
             </form>
-            <table border="1" width="100%" style="text-align: center;">
+            <br>
+            <table border="1" width="100%">
                 <thead>
                 <tr>
                     <th>Student Name</th>
@@ -93,8 +87,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="student-name">Michael Scott</td>
-                    <td><input type="text" value="98" class="grades-input-field"/></td>
+                    <td>Michael Scott</td>
+                    <td><input type="text" value="98"/></td>
                     <td>83</td>
                     <td>70</td>
                     <td>88</td>
@@ -102,45 +96,45 @@
                     <td>91</td>
                 </tr>
                 <tr>
-                    <td class="student-name">Pam Beesly</td>
+                    <td>Pam Beesly</td>
                     <td>78</td>
                     <td>83</td>
-                    <td><input type="text" value="89" class="grades-input-field"/></td>
+                    <td><input type="text" value="89"/></td>
                     <td>95</td>
                     <td>99</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td class="student-name">Jim Halpert</td>
+                    <td>Jim Halpert</td>
                     <td>72</td>
                     <td>73</td>
                     <td>70</td>
-                    <td><input type="text" value="78" class="grades-input-field"/></td>
+                    <td><input type="text" value="78"/></td>
                     <td>80</td>
                     <td>81</td>
                 </tr>
                 <tr>
-                    <td class="student-name">Dwight Schrute</td>
+                    <td>Dwight Schrute</td>
                     <td>98</td>
                     <td>99</td>
                     <td>95</td>
                     <td>94</td>
                     <td>93</td>
-                    <td><input type="text" value="90" class="grades-input-field"/></td>
+                    <td><input type="text" value="90"/></td>
                 </tr>
                 <tr>
-                    <td class="student-name">Angela Martin</td>
+                    <td>Angela Martin</td>
                     <td>98</td>
                     <td>83</td>
                     <td>50</td>
                     <td>88</td>
-                    <td><input type="text" value="60" class="grades-input-field"/></td>
+                    <td><input type="text" value="60"/></td>
                     <td>79</td>
                 </tr>
                 <tr>
-                    <td class="student-name">Kevin Malone</td>
+                    <td>Kevin Malone</td>
                     <td>40</td>
-                    <td><input type="text" value="10" class="grades-input-field"/></td>
+                    <td><input type="text" value="10"/></td>
                     <td>10</td>
                     <td>50</td>
                     <td>34</td>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table width="100%">
+    <tbody>
+    <tr valign="baseline">
+        <!--   Left most column links     -->
+        <td>
+            <ul>
+                <li><a href="profile-sub-column.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../courses-sub-column.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <!--   Sub column links     -->
+        <td>
+            <ul>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Announcements</a></li>
+            </ul>
+        </td>
+        <!--   Profile edit page     -->
+        <td>
+            <h2>David Bergantino</h2>
+            <form>
+                <label for="profile-name">Name:*</label>
+                <input type="text" id="profile-name" name="profile-name" value="David Bergantino">
+
+                <label for="profile-pronouns">Pronouns:</label>
+                <select id="profile-pronouns">
+                    <option selected value="NONE">None</option>
+                    <option value="Option2">Option2</option>
+                    <option value="Option3">Option3</option>
+                    <option value="Option4">Option4</option>
+                </select><br><br>
+
+                <label for="profile-title">Title:</label>
+                <input type="text" id="profile-title" name="profile-title">
+
+                <label>
+                    <h3>Contact</h3>
+                    No registed services, you can add some on the <a href="#">settings</a> page.
+                </label>
+
+                <label for="profile-biography">
+                    <h3>Biography</h3>
+                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.<br/>
+                </label>
+                <textarea id="profile-biography">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea><br><br>
+
+                <label><h3>Links</h3></label>
+                <ul>
+                    <li><a href="https://www.youtube.com/">YouTube</a> Links to an external site.</li>
+                </ul>
+
+                <label><h3>Title URL</h3></label>
+                <input type="text" value="Youtube"></input>
+                ->
+                <input type="text" value="https://www.youtube.com/"></input>
+                <a href="#">Remove</a><br><br>
+
+                <button type="button">Add another link</button><br>
+
+                <button type="button">Cancel</button>
+                <a href="index.html"><button type="button">Save Profile</button></a><br>
+
+                <button type="button">Edit Profile</button>
+                <a href="index.html"><button type="button">Cancel Editing</button></a>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
