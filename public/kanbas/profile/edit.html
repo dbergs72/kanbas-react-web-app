@@ -40,7 +40,7 @@
         <!--   Profile edit page     -->
         <td>
             <h2>David Bergantino</h2>
-            <form>
+            <form action="index.html">
                 <div>
                     <label for="profile-name">Name:*</label>
                     <input type="text" id="profile-name" name="profile-name" value="David Bergantino">
@@ -79,29 +79,26 @@
                     <thead>
                         <tr>
                             <th>Title</th>
+                            <th></th>
                             <th>URL</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>
-                            <input type="text" value="Youtube"/>
-                            ->
-                        </td>
-                        <td>
-                            <input type="text" value="https://www.youtube.com/"/><a href="#">Remove</a>
-                        </td>
+                        <td><input type="text" value="Youtube"/></td>
+                        <td>-></td>
+                        <td><input type="text" value="https://www.youtube.com/"/><a href="#">Remove</a></td>
                     </tr>
                     </tbody>
                 </table>
 
-                <button type="button">Add another link</button><br/>
-
-                <button type="button">Cancel</button>
-                <a href="index.html"><button type="button">Save Profile</button></a><br/>
-
-                <button type="button">Edit Profile</button>
-                <a href="index.html"><button type="button">Cancel Editing</button></a>
+                <input type="button" value="Add another link">
+                <br/>
+                <input type="button" value="Cancel">
+                <input type="submit" value="Save Profile">
+                <br/>
+                <input type="button" value="Edit Profile">
+                <input type="submit" value="Cancel Editing">
             </form>
         </td>
     </tr>
