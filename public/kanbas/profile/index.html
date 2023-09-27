@@ -3,31 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
 
-<table width="100%">
-    <tbody>
-    <tr valign="baseline">
-        <!--   Left most column links     -->
-        <td>
-            <ul>
-                <li><a href="profile-sub-column.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="../courses-sub-column.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <!--   Sub column links     -->
-        <td>
-            <ul>
+<div class="wd-main-page">
+    <ul class="wd-sidebar">
+        <li><img src="../../images/neu-logo.png" alt="Northeastern" class="wd-width-100-percent"></li>
+        <li><a href="profile-sub-column.html" class="wd-hide-link wd-background-white">
+            <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
+            <div class="wd-sidebar-text"><span class="wd-color-red">Account</span></div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Dashboard</div>
+        </a></li>
+        <li><a href="../courses-sub-column.html">
+            <i class="fa-solid fa-book fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Courses</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Calendar</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Inbox</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">History</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Studio</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-regular fa-square fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Commons</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-question fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Help</div>
+        </a></li>
+    </ul>
+    <div class="wd-left-sidebar-gap-fill-and-align">
+        <div>
+            <ul class="wd-sub-sidebar">
                 <li><a href="#">Notifications</a></li>
-                <li><a href="index.html">Profile</a></li>
+                <li class="wd-sub-sidebar-selected">
+                    <a href="index.html">
+                        <span class="wd-color-black">Profile</span>
+                    </a>
+                </li>
                 <li><a href="#">Files</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">ePortfolios</a></li>
@@ -36,29 +66,37 @@
                 <li><a href="#">Qwickly Course Tools</a></li>
                 <li><a href="#">Global Announcements</a></li>
             </ul>
-        </td>
-        <!--   Profile page     -->
-        <td>
-            David Bergantino's Profile
-            <hr>
-            <table width="100%"><tr>
-                <td><h2>David Bergantino</h2></td>
-                <td>
-                    <form action="./edit.html">
-                        <input type="submit" value="Edit Profile">
-                    </form>
-                </td>
-            </tr></table>
-            <h3>Contact</h3>
-            No registered services, you can add some on the <a href="#">settings</a> page.
-            <h3>Biography</h3>
-            Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-            <h3>Links</h3>
-            <a href="https://www.youtube.com/">Youtube</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
+        </div>
+        <div class="wd-width-100-percent">
+            <div class="row">
+                <div class="col-12 wd-margin-top-5">
+                    David Bergantino's Profile
+                    <hr class="wd-padding-right">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="float-lg-end wd-center-content wd-padding-left wd-padding-right">
+                        <a href="./edit.html" class="wd-black-no-under-links">
+                            <button type="button" class="btn btn-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                                Edit Profile
+                            </button>
+                        </a>
+                    </div>
+                    <i class="fa-regular fa-user fa-8x wd-margin-profile-icon"></i>
+                    <h3 class="wd-profile-page-subject">David Bergantino</h3>
+                    <h3 class="wd-profile-page-subject wd-margin-top-profile-subjects">Contact</h3>
+                    No registered services, you can add some on the <a href="#" class="wd-red-no-under-links">settings</a> page.
+                    <h3 class="wd-profile-page-subject wd-margin-top-profile-subjects">Biography</h3>
+                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+                    <h3 class="wd-profile-page-subject wd-margin-top-profile-subjects">Links</h3>
+                    <a href="https://www.youtube.com/" class="wd-red-no-under-links">Youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

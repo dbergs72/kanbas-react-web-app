@@ -1,0 +1,176 @@
+.wd-sidebar {
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    width: 84px;
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.wd-sidebar > li {
+    font-size: 0.7rem;
+    position: relative;
+}
+
+.wd-sidebar > li > a {
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: block;
+}
+
+.wd-width-100-percent {
+    width: 100%;
+}
+
+.wd-width-100-vh {
+    width: 100vh;
+}
+
+.wd-height-100-percent {
+    height: 100%;
+}
+
+.wd-width-30-px {
+    width: 30px;
+}
+
+.wd-color-red {
+    color: red;
+}
+
+.wd-color-lightgrey {
+    color: lightgrey;
+}
+
+.wd-color-black {
+    color: black;
+}
+
+.wd-background-white {
+    background-color: white;
+}
+
+.wd-main-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.wd-sub-sidebar {
+    list-style-type: none;
+    width: 190px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.wd-left-sidebar-gap-fill-and-align {
+    margin-left: 84px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-sub-sidebar > li > a {
+    text-decoration: none;
+    color: red;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    padding-left: 3px;
+}
+
+.wd-sub-sidebar-selected {
+    border-left: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.wd-sidebar-text {
+    color: white;
+    margin-top: 5px;
+}
+
+/*Profile page specific ones*/
+
+.wd-profile-page-base {
+    display: flex;
+    flex-direction: row;
+}
+.wd-profile-page-subject {
+    font-weight: 400;
+}
+
+.wd-center-content {
+    text-align: center;
+}
+
+.wd-margin-profile-icon {
+    margin: 5px 5px 15px;
+}
+
+.wd-margin-top-5 {
+    margin-top: 5px;
+}
+
+.wd-margin-top-profile-subjects {
+    margin-top: 50px;
+}
+
+.wd-red-no-under-links {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-black-no-under-links {
+    color: black;
+    text-decoration: none;
+}
+
+/*Profile edit headers*/
+.wd-profile-edit-headers {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.wd-font-weight-700 {
+    font-weight: 700;
+}
+
+.wd-left-align {
+    text-align: left;
+}
+
+.wd-right-align {
+    text-align: right;
+}
+
+.wd-display-inline {
+    display: inline-block;
+    text-align: left;
+}
+
+.wd-display-block {
+    display: block;
+}
+
+.wd-margin-top-65 {
+    margin-top: 65px;
+}
+
+.wd-margin-right {
+    margin-right: 15px;
+}
+
+.wd-padding-left {
+    padding-left: 30px;
+}
+
+.wd-padding-right {
+    padding-right: 30px;
+}
