@@ -1,0 +1,6 @@
+1. Finish rough of all pages
+2. Fix margin and padding with bootstrap
+3. Fix scrollable issues on pages
+4. Fix bootstrap version and icons
+5. Double check
+6. Add breadcrumb

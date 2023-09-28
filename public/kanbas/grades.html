@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
 
-<table width="100%">
-    <tbody>
-    <tr valign="baseline">
-        <!--   Left most column links     -->
-        <td>
-            <ul>
-                <li><a href="profile/profile-sub-column.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="courses-sub-column.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <!--   Sub column links     -->
-        <td>
-            <ul>
+<div class="wd-main-page">
+    <ul class="wd-sidebar">
+        <li><img src="../images/neu-logo.png" alt="Northeastern" class="wd-width-100-percent"></li>
+        <li><a href="./profile/profile-sub-column.html">
+            <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
+            <div class="wd-sidebar-text">Account</div>
+        </a></li>
+        <li><a href="./dashboard/index.html">
+            <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Dashboard</div>
+        </a></li>
+        <li><a href="courses-sub-column.html" class="wd-background-white">
+            <i class="fa-solid fa-book fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text"><span class="wd-color-red">Courses</span></div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Calendar</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Inbox</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">History</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Studio</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-regular fa-square fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Commons</div>
+        </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-question fa-2x wd-color-red"></i>
+            <div class="wd-sidebar-text">Help</div>
+        </a></li>
+    </ul>
+    <div class="wd-left-sidebar-gap-fill-and-align">
+        <div>
+            <ul class="wd-sub-sidebar">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="#">Modules</a></li>
                 <li><a href="#">Piazza</a></li>
                 <li><a href="#">Zoom Meetings</a></li>
                 <li><a href="assignments/index.html">Assignments</a></li>
                 <li><a href="">Quizzes</a></li>
-                <li><a href="grades.html">Grades</a></li>
+                <li><a href="grades.html" class="wd-sub-sidebar-selected">
+                    <span class="wd-color-black">Grades</span></a></li>
                 <li><a href="#">People</a></li>
                 <li><a href="#">Panopto Video</a></li>
                 <li><a href="#">Discussions</a></li>
@@ -45,111 +72,121 @@
                 <li><a href="#">Syllabus</a></li>
                 <li><a href="#">Settings</a></li>
             </ul>
-        </td>
-        <!--   Main grades page     -->
-        <td valign="baseline">
-            <select id="grades-gradebook-dd">
-                <option selected value="GRDBK">Gradebook</option>
-                <option value="Option2">Option2</option>
-                <option value="Option3">Option3</option>
-                <option value="Option4">Option4</option>
-            </select>
-            <button type="button">Import</button>
-            <select id="grades-export-dd">
-                <option selected value="EXPT">Export</option>
-                <option value="Option2">Option2</option>
-                <option value="Option3">Option3</option>
-                <option value="Option4">Option4</option>
-            </select>
-            <button type="button">Configure</button>
-            <form>
-                <label for="grades-stdnt-search">
-                    <h3>Student Names</h3>
-                </label>
-                <input type="text" id="grades-stdnt-search" name="grades-stdnt-search" placeholder="Search Students">
-                <br/>
-                <label for="grades-asgnmt-search">
-                    <h3>Assignment Names</h3>
-                </label>
-                <input type="text" id="grades-asgnmt-search" name="grades-asgnmt-search"
-                       placeholder="Search Assignments">
-                <br/><br/>
-                <input type="button" value="Apply Filters">
-            </form>
-            <br/>
-            <table border="1" width="100%">
-                <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 Setup Out of 100</th>
-                    <th>A2 HTML Out of 100</th>
-                    <th>A3 CSS Out of 100</th>
-                    <th>A4 Boostrap Out of 100</th>
-                    <th>A5 JAVASCRIPT Out of 100</th>
-                    <th>A6 REACT Out of 100</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Michael Scott</td>
-                    <td><input type="number" value="98" min="0" max="100"/></td>
-                    <td>83</td>
-                    <td>70</td>
-                    <td>88</td>
-                    <td>90</td>
-                    <td>91</td>
-                </tr>
-                <tr>
-                    <td>Pam Beesly</td>
-                    <td>78</td>
-                    <td>83</td>
-                    <td><input type="number" value="89" min="0" max="100"/></td>
-                    <td>95</td>
-                    <td>99</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Jim Halpert</td>
-                    <td>72</td>
-                    <td>73</td>
-                    <td>70</td>
-                    <td><input type="number" value="78" min="0" max="100"/></td>
-                    <td>80</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>Dwight Schrute</td>
-                    <td>98</td>
-                    <td>99</td>
-                    <td>95</td>
-                    <td>94</td>
-                    <td>93</td>
-                    <td><input type="number" value="90" min="0" max="100"/></td>
-                </tr>
-                <tr>
-                    <td>Angela Martin</td>
-                    <td>98</td>
-                    <td>83</td>
-                    <td>50</td>
-                    <td>88</td>
-                    <td><input type="number" value="60" min="0" max="100"/></td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>Kevin Malone</td>
-                    <td>40</td>
-                    <td><input type="number" value="10" min="0" max="100"/></td>
-                    <td>10</td>
-                    <td>50</td>
-                    <td>34</td>
-                    <td>30</td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-    </tbody>
-</table>
+        </div>
+        <div class="wd-width-100-percent">
+            <div class="row">
+                <div class="col-12" style="text-align: right">
+                    <button type="button" class="btn btn-light">
+                        <i class="fa-solid fa-file-import"></i>
+                        Import
+                    </button>
+                    <select id="grades-export-dropdown" class="form-select-sm" aria-label="Default select example">
+                        <option selected value="EXPT">
+                            <i class="fa-solid fa-file-export">Export</i>
+                        </option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                    <button type="button" class="btn btn-light">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="grades-stdnt-search">
+                                <h6 class="wd-font-weight-600">Student Names</h6>
+                            </label>
+                            <input type="text" id="grades-stdnt-search" name="grades-stdnt-search" placeholder="Search Students" class="form-select">
+                            <input type="button" value="Apply Filters" class="wd-margin-top-5">
+                        </div>
+                        <div class="col">
+                            <label for="grades-asgnmt-search">
+                                <h6 class="wd-font-weight-600">Assignment Names</h6>
+                            </label>
+                            <input type="text" id="grades-asgnmt-search" name="grades-asgnmt-search" placeholder="Search Assignments" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col"><div class="grades-table pt-5">
+                    <table class="table table-striped table-bordered">
+                        <tbody>
+                            <tr>
+                                <th><span class="wd-color-black wd-font-weight-400">Student Name</span></th>
+                                <td>A1 Setup Out of 100</td>
+                                <td>A2 HTML Out of 100</td>
+                                <td>A3 CSS Out of 100</td>
+                                <td>A4 Boostrap Out of 100</td>
+                                <td>A5 JAVASCRIPT Out of 100</td>
+                                <td>A6 REACT Out of 100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="wd-color-red">Michael Scott</span></th>
+                                <td><input type="number" value="98" min="0" max="100" class="form-control w-auto"/></td>
+                                <td>83</td>
+                                <td>70</td>
+                                <td>88</td>
+                                <td>90</td>
+                                <td>91</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pam Beesly</th>
+                                <td>78</td>
+                                <td>83</td>
+                                <td><input type="number" value="89" min="0" max="100" class="form-control w-auto"/></td>
+                                <td>95</td>
+                                <td>99</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jim Halpert</th>
+                                <td>72</td>
+                                <td>73</td>
+                                <td>70</td>
+                                <td><input type="number" value="78" min="0" max="100" class="form-control w-auto"/></td>
+                                <td>80</td>
+                                <td>81</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dwight Schrute</th>
+                                <td>98</td>
+                                <td>99</td>
+                                <td>95</td>
+                                <td>94</td>
+                                <td>93</td>
+                                <td><input type="number" value="90" min="0" max="100" class="form-control w-auto"/></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Angela Martin</th>
+                                <td>98</td>
+                                <td>83</td>
+                                <td>50</td>
+                                <td>88</td>
+                                <td><input type="number" value="60" min="0" max="100" class="form-control w-auto"/></td>
+                                <td>79</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kevin Malone</th>
+                                <td>40</td>
+                                <td class="text-center">
+                                    <input type="number" value="10" min="0" max="100" class="form-control w-auto"/></td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>34</td>
+                                <td>30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

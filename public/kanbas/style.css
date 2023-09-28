@@ -38,7 +38,7 @@
 }
 
 .wd-color-red {
-    color: red;
+    color: #c33234;
 }
 
 .wd-color-lightgrey {
@@ -78,7 +78,7 @@
 
 .wd-sub-sidebar > li > a {
     text-decoration: none;
-    color: red;
+    color: #c33234;
     padding-top: 8px;
     padding-bottom: 8px;
     display: block;
@@ -106,6 +106,10 @@
     font-weight: 400;
 }
 
+.wd-font-weight-400 {
+    font-weight: 400;
+}
+
 .wd-center-content {
     text-align: center;
 }
@@ -123,7 +127,7 @@
 }
 
 .wd-red-no-under-links {
-    color: red;
+    color: #c33234;
     text-decoration: none;
 }
 
@@ -140,6 +144,10 @@
 
 .wd-font-weight-700 {
     font-weight: 700;
+}
+
+.wd-font-weight-600 {
+    font-weight: 600;
 }
 
 .wd-left-align {
@@ -173,4 +181,45 @@
 
 .wd-padding-right {
     padding-right: 30px;
+}
+
+.grades-table > table > tbody > tr > th {
+    color: #c33234;
+}
+.grades-table > table > tbody > tr > td {
+    text-align: center;
+    justify-content: center;
+}
+
+.wd-dashboard-header {
+    font-weight: lighter;
+    font-size: xxx-large;
+}
+
+.wd-dashboard-subheader {
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.wd-card-style {
+    width: 260px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.wd-card-image {
+    background-color: #000073;
+    color: #000073;
+    height: 150px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.card-body > h5 {
+    color: #000073;
+    font-size: small;
+}
+
+.wd-font-small {
+    font-size: small;
 }
