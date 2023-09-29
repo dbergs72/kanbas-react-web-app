@@ -1,4 +1,4 @@
-.wd-sidebar {
+.wd-sidebar  > ul {
     background-color: black;
     height: 100%;
     text-align: center;
@@ -9,17 +9,23 @@
     margin-bottom: 0;
 }
 
-.wd-sidebar > li {
+.wd-sidebar  > ul > li {
     font-size: 0.7rem;
     position: relative;
 }
 
-.wd-sidebar > li > a {
+.wd-sidebar > ul > li > a {
     text-decoration: none;
     padding-top: 7px;
     padding-bottom: 7px;
     display: block;
 }
+
+.wd-padding-left-20-pixel {
+    padding-left: 20px;
+}
+
+
 
 .wd-color-lightgrey {
     color: lightgrey;
