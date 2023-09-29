@@ -21,6 +21,18 @@
     display: block;
 }
 
+.wd-color-lightgrey {
+    color: lightgrey;
+}
+
+.wd-color-red {
+    color: #c33234;
+}
+
+.wd-page-content {
+    flex-grow: 1;
+}
+
 .wd-width-100-percent {
     width: 100%;
 }
@@ -35,14 +47,6 @@
 
 .wd-width-30-px {
     width: 30px;
-}
-
-.wd-color-red {
-    color: #c33234;
-}
-
-.wd-color-lightgrey {
-    color: lightgrey;
 }
 
 .wd-color-black {
@@ -71,9 +75,6 @@
 
 .wd-left-sidebar-gap-fill-and-align {
     margin-left: 84px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .wd-sub-sidebar > li > a {
