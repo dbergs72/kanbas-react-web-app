@@ -1,0 +1,27 @@
+.wd-sidebar > ul {
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    width: 84px;
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.wd-sidebar > ul > li {
+    font-size: 0.7rem;
+    position: relative;
+}
+
+.wd-sidebar > ul > li > a {
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: block;
+}
+
+.wd-sidebar-text {
+    color: white;
+    margin-top: 5px;
+}
