@@ -25,6 +25,10 @@
     padding-left: 20px;
 }
 
+.wd-padding-top-20-pixel {
+    padding-top: 20px;
+}
+
 .wd-color-lightgrey {
     color: lightgrey;
 }
@@ -223,6 +227,10 @@
     font-size: 13px;
 }
 
+.wd-inline {
+    display: inline;
+}
+
 .wd-card-eclipses-vertical {
     position: absolute;
     top: 10px;
@@ -257,4 +265,27 @@
 
 .wd-font-small {
     font-size: small;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-clear-both {
+    clear: both;
+}
+
+@media (max-width: 700px) {
+    .wd-sidebar {
+        display: none;
+    }
+    .wd-left-sidebar-gap-fill-and-align {
+        margin-left: 0;
+    }
+    .wd-dashboard-header {
+        color: white;
+    }
+    .wd-card-style {
+        width: 100%;
+    }
 }

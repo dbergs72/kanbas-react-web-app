@@ -3,3 +3,70 @@
 3. Fix scrollable issues on pages
 5. Double check
 6. Add breadcrumb
+
+
+<label for="submission-type">Submission Type</label><br>
+<select id="submission-type">
+    <option selected value="online">Online</option>
+    <option value="Option2">Option2</option>
+    <option value="Option3">Option3</option>
+    <option value="Option4">Option4</option>
+</select><br><br>
+
+<label>Online Entry Options</label><br>
+<input type="checkbox" value="TXTENRY"
+       name="check-entry" id="chkbox-txt-entry"/>
+<label for="chkbox-txt-entry">Text Entry</label><br>
+<input type="checkbox" value="WBURL"
+       name="check-entry" id="chkbox-wb-url"/>
+<label for="chkbox-wb-url">Website URL</label><br>
+<input type="checkbox" value="MDIREC"
+       name="check-entry" id="chkbox-mdi-rec"/>
+<label for="chkbox-mdi-rec">Media Recordings</label><br>
+<input type="checkbox" value="STDANO"
+       name="check-entry" id="chkbox-std-ano"/>
+<label for="chkbox-std-ano">Student Annotation</label><br>
+<input type="checkbox" value="FLUPL"
+       name="check-entry" id="chkbox-fl-upl"/>
+<label for="chkbox-fl-upl">File Uploads</label><br><br>
+
+<label for="submission-attempts">Submission Attempts</label><br>
+<select id="submission-attempts">
+    <option selected value="unlimited">Unlimited</option>
+    <option value="Option2">Option2</option>
+    <option value="Option3">Option3</option>
+    <option value="Option4">Option4</option>
+</select><br><br>
+
+<label for="plagiarism-review">Plagiarism Review</label><br>
+<select id="plagiarism-review">
+    <option selected value="online">None</option>
+    <option value="Option2">Option2</option>
+    <option value="Option3">Option3</option>
+    <option value="Option4">Option4</option>
+</select><br><br>
+
+<label>Group Assignment</label><br/>
+<input type="checkbox" value="GROUPASIN"
+       name="check-assignment-team" id="chkbox-assignment-team-group"/>
+<label for="chkbox-assignment-team-group">This is a group assignment</label><br><br>
+
+<label>Peer Reviews</label><br/>
+<input type="checkbox" value="RQURD"
+       name="check-peer-reviews" id="chkbox-req-peer-rev"/>
+<label for="chkbox-req-peer-rev">Require Peer Reviews</label><br><br>
+
+<label for="assignee">Assign to</label><br>
+<input type="text" id="assignee" value="Everyone"/><br><br>
+
+<label for="due-date">Due</label><br>
+<input type="date" id="due-date" value="2021-01-01"/><br><br>
+
+<label for="available-from-date">Available from</label><br>
+<input type="date" id="available-from-date" value="2021-01-01"/><br><br>
+
+<label for="until-date">Until</label><br>
+<input type="date" id="until-date" value="2021-01-01"/><br><br>
+
+<input type="submit" value="Cancel">
+<input type="submit" value="Save">
