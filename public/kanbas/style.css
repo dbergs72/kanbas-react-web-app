@@ -266,10 +266,17 @@
     color: green;
 }
 
+.wd-color-white {
+    color: white;
+}
+
 .wd-background-green {
     background-color: green;
 }
 
+.wd-background-black {
+    background-color: black;
+}
 
 .wd-font-small {
     font-size: small;
@@ -373,4 +380,60 @@
 .wd-green-left-edge {
     border-left-color: green;
     border-left-width: 4px;
+}
+
+.wd-hidden-top-bar {
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .wd-right-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wd-sidebar {
+        display: none;
+    }
+    .wd-left-sidebar-gap-fill-and-align {
+        display: none;
+    }
+    .wd-left-sidebar-gap-fill-and-align {
+        margin-left: 0;
+    }
+    .wd-dashboard-header {
+        color: white;
+    }
+    .wd-card-style {
+        width: 100%;
+    }
+    .wd-hidden-top-bar {
+        display: block;
+    }
+    .wd-page-content {
+        margin-top: 55px;
+    }
+}
+
+.wd-mini-menu {
+    width: 600px;
+}
+
+.wd-mini-menu > li > a  {
+    color: #c33234;
+    text-decoration: none;
+}
+
+.wd-remove-background {
+    background-color: black;
+    border-style: none;
 }
