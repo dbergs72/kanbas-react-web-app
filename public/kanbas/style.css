@@ -33,6 +33,10 @@
     color: lightgrey;
 }
 
+.wd-background-color-lightgrey {
+    background-color: lightgrey;
+}
+
 .wd-color-red {
     color: #c33234;
 }
@@ -362,4 +366,7 @@
     border-radius: 6px;
 }
 
+.wd-font-size-large {
+    font-size: large;
+}
 
