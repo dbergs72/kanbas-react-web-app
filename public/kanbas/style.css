@@ -1,4 +1,4 @@
-.wd-sidebar  > ul {
+.wd-sidebar > ul {
     background-color: black;
     height: 100%;
     text-align: center;
@@ -9,7 +9,7 @@
     margin-bottom: 0;
 }
 
-.wd-sidebar  > ul > li {
+.wd-sidebar > ul > li {
     font-size: 0.7rem;
     position: relative;
 }
@@ -38,6 +38,10 @@
 }
 
 .wd-page-content {
+    flex-grow: 1;
+}
+
+.wd-flex-grow-1 {
     flex-grow: 1;
 }
 
@@ -271,6 +275,10 @@
     float: right;
 }
 
+.wd-float-left {
+    float: left;
+}
+
 .wd-clear-both {
     clear: both;
 }
@@ -289,3 +297,61 @@
         width: 100%;
     }
 }
+
+.wd-assignments-drop-down {
+    list-style-type: none;
+    clear: both;
+}
+
+.wd-assignments-drop-down > li:first-child {
+    border-left-color: lightgrey;
+    border-left-style: solid;
+    border-left-width: 0;
+    background-color: lightgrey;
+    padding: 15px;
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-assignments-drop-down > li {
+    border-left-color: green;
+    border-left-style: solid;
+    border-left-width: 5px;
+
+    border-right-color: lightgrey;
+    border-right-style: solid;
+    border-right-width: 3px;
+
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+
+    padding: 15px 5px 15px 5px;
+    color: black;
+}
+
+
+.wd-assignments-drop-down-heading-percent-bubble {
+    text-align: center;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.wd-padding-0 {
+    padding: 0;
+    margin: 0;
+}
+
+.wd-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-font-x-small {
+    font-size: x-small;
+}
+
