@@ -76,7 +76,7 @@
 .wd-main-page {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    /*height: 100%;*/
     width: 100%;
 }
 
@@ -370,3 +370,7 @@
     font-size: large;
 }
 
+.wd-green-left-edge {
+    border-left-color: green;
+    border-left-width: 4px;
+}
