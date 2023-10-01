@@ -11,6 +11,73 @@
 <body>
 
 <div>
+    <div class="wd-hidden-top-bar" style="z-index: 999;">
+        <div class="container">
+            <div class="row wd-color-white">
+                <div class="col-1">
+                    <div class="dropdown">
+                        <button class="wd-remove-background mt-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-grip-lines wd-color-white"></i>
+                        </button>
+                        <ul class="dropdown-menu wd-mini-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a href="#" class="float-end pe-3" style="color: black">X</a></li>
+                            <li class="wd-clear-both"><a href="./profile/profile-sub-column.html">
+                                <i class="fa-regular fa-user wd-color-lightgrey"></i>Account</a></li>
+                            <li><a href="./dashboard/index.html">
+                                <i class="fa-solid fa-gauge wd-color-red"></i>Dashboard</a></li>
+                            <li><a href="./courses-sub-column.html" class="wd-background-white">
+                                <i class="fa-solid fa-book wd-color-red"></i>Courses</a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-calendar wd-color-red"></i>Calendar</a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-inbox wd-color-red"></i>Inbox</a></li>
+                            <li><a href="#">
+                                <i class="fa-regular fa-clock wd-color-red"></i>History</a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-computer wd-color-red"></i>Studio</a></li>
+                            <li><a href="#">
+                                <i class="fa-regular fa-square wd-color-red"></i>Commons</a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-question wd-color-red"></i>Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-10">
+                    CS4550.11744.202310
+                    <br>
+                    Modules
+                </div>
+                <div class="col-1">
+                    <div class="dropdown">
+                        <button class="wd-remove-background mt-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-caret-down wd-color-white me-1"></i>
+                        </button>
+                        <ul class="dropdown-menu wd-mini-menu" style="width: 100vh" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Modules</a></li>
+                            <li><a class="dropdown-item" href="#">Piazza</a></li>
+                            <li><a class="dropdown-item" href="#">Zoom Meetings</a></li>
+                            <li><a class="dropdown-item" href="./assignments/index.html">Assignments</a></li>
+                            <li><a class="dropdown-item" href="">Quizzes</a></li>
+                            <li><a class="dropdown-item" href="./grades.html">Grades</a>
+                            <li><a class="dropdown-item" href="#">People</a></li>
+                            <li><a class="dropdown-item" href="#">Panopto Video</a></li>
+                            <li><a class="dropdown-item" href="#">Discussions</a></li>
+                            <li><a class="dropdown-item" href="#">Announcements</a></li>
+                            <li><a class="dropdown-item" href="#">Pages</a></li>
+                            <li><a class="dropdown-item" href="#">Files</a></li>
+                            <li><a class="dropdown-item" href="#">Rubrics</a></li>
+                            <li><a class="dropdown-item" href="#">Outcomes</a></li>
+                            <li><a class="dropdown-item" href="#">Collaborations</a></li>
+                            <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="wd-sidebar">
         <ul>
             <li><img src="../images/neu-logo.png" alt="Northeastern" class="w-100"></li>
@@ -203,7 +270,105 @@
                 </div>
             </div>
         </div>
+        <div class="wd-right-sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wd-left-align">
+                        Course Status
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6  p-0">
+                        <button class="btn btn-light text-nowrap">
+                            <i class="fa-solid fa-ban"></i>
+                            Unpublished
+                        </button>
+                    </div>
+                    <div class="col-6  p-0">
+                        <button class="btn btn-success">
+                            <i class="fa-regular fa-circle-check"></i>
+                            Published
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-1">
+                    <div class="col-12">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-file-import"></i>
+                            Import Existing Content
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col-12">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-upload"></i>
+                            Import from Commons
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col-12">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-bullseye"></i>
+                            Choose Home Page
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            View Course Stream
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            New Announcements
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            New Analytics
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-1 mb-1">
+                    <div class="col">
+                        <button class="btn btn-light w-100">
+                            <i class="fa-regular fa-bell"></i>
+                            View Course Information
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 wd-font-weight-700">
+                        ToDo
+                        <hr class="mt-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">quizzes</div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 wd-font-weight-700">
+                        Coming Up
+                        <hr class="mt-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">tests</div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 
 </body>

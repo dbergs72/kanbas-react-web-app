@@ -437,3 +437,7 @@
     background-color: black;
     border-style: none;
 }
+
+.wd-sub-left-menu > li > a {
+    text-decoration: none;
+}
