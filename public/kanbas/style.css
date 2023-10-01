@@ -355,3 +355,11 @@
     font-size: x-small;
 }
 
+.wd-edit-assignment-sub-section {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+

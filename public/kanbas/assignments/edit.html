@@ -53,10 +53,20 @@
         </ul>
     </div>
     <div class="wd-left-sidebar-gap-fill-and-align pt-3">
-        <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
-        <span class="wd-color-red wd-padding-top-20-pixel">CS4550.11744.202310</span>
-        > <span class="wd-color-red">Assignments</span> > A1 - ENV + ...
-        <hr class="wd-padding-right me-3 ms-3">
+        <div class="wd-flex">
+            <div>
+                <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
+            </div>
+            <div class="flex-grow-1">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item wd-color-red"> CS4550.11744.202310</li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <hr class="pe-1 me-3 ms-3 mt-0">
     </div>
     <div class="wd-main-page">
         <div class="wd-left-sidebar-gap-fill-and-align">
@@ -121,7 +131,7 @@
                             <label for="assignment-group">Assignment Group</label>
                         </div>
                         <div class="col-8">
-                            <select class="form-control w-75" id="assignment-group">
+                            <select class="form-select w-75" id="assignment-group">
                                 <option selected value="ASSIGNMENTS">ASSIGMENTS</option>
                                 <option value="Option2">Option2</option>
                                 <option value="Option3">Option3</option>
@@ -134,7 +144,7 @@
                             <label for="grade-display-unit">Display Grade as</label>
                         </div>
                         <div class="col-8">
-                            <select class="form-control w-75" id="grade-display-unit">
+                            <select class="form-select w-75" id="grade-display-unit">
                                 <option selected value="percentage">Percentage</option>
                                 <option value="Option2">Option2</option>
                                 <option value="Option3">Option3</option>
@@ -152,10 +162,46 @@
                     </div>
                     <div class="row mt-3 wd-center-content form-group">
                         <div class="col-4 wd-right-align">
+                            <label class="form-check-label" for="submission-type">Submission Type</label>
+                        </div>
+                        <div class="col-8 wd-left-align">
+                            <div class="w-75 wd-edit-assignment-sub-section p-3">
+                                <select class="form-select w-75" id="submission-type">
+                                    <option selected value="online">Online</option>
+                                    <option value="Option2">Option2</option>
+                                    <option value="Option3">Option3</option>
+                                    <option value="Option4">Option4</option>
+                                </select>
+                                <h6 class="pt-3 wd-font-weight-700">Online Entry Options</h6>
+                                <div class="form-check pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="online-entry-option-text" checked>
+                                    <label class="form-check-label" for="online-entry-option-text">Text Entry</label>
+                                </div>
+                                <div class="form-check pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="online-entry-option-web" checked>
+                                    <label class="form-check-label" for="online-entry-option-web">Website URL</label>
+                                </div>
+                                <div class="form-check pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="online-entry-option-media" checked>
+                                    <label class="form-check-label" for="online-entry-option-media">Media Recordings</label>
+                                </div>
+                                <div class="form-check pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="online-entry-option-student">
+                                    <label class="form-check-label" for="online-entry-option-student">Student Annotation</label>
+                                </div>
+                                <div class="form-check pb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="online-entry-option-file">
+                                    <label class="form-check-label" for="online-entry-option-file">File Uploads</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 wd-center-content form-group">
+                        <div class="col-4 wd-right-align">
                             <label for="submission-attempts">Submission Attempts</label>
                         </div>
                         <div class="col-8">
-                            <select class="form-control w-75" id="submission-attempts">
+                            <select class="form-select w-75" id="submission-attempts">
                                 <option selected value="unlimited">Unlimited</option>
                                 <option value="Option2">Option2</option>
                                 <option value="Option3">Option3</option>
@@ -168,7 +214,7 @@
                             <label for="plagiarism-review">Plagiarism Review</label>
                         </div>
                         <div class="col-8">
-                            <select class="form-control w-75" id="plagiarism-review">
+                            <select class="form-select w-75" id="plagiarism-review">
                                 <option selected value="none">None</option>
                                 <option value="Option2">Option2</option>
                                 <option value="Option3">Option3</option>

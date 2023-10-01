@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" href="../style.css">
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
@@ -61,10 +53,26 @@
         </ul>
     </div>
     <div class="wd-left-sidebar-gap-fill-and-align pt-3">
-        <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
-        <span class="wd-color-red wd-padding-top-20-pixel">CS4550.11744.202310</span>
-        > Assignments
-        <hr class="wd-padding-right me-3 ms-3">
+        <div class="wd-flex">
+            <div>
+                <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
+            </div>
+            <div class="flex-grow-1">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item wd-color-red"> CS4550.11744.202310</li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+            </div>
+            <div>
+                <button class="btn btn-light me-3 mb-1">
+                    <i class="fa-solid fa-glasses"></i>
+                    Student View
+                </button>
+            </div>
+        </div>
+        <hr class="pe-1 me-3 ms-3 mt-0">
     </div>
     <div class="wd-main-page">
         <div class="wd-left-sidebar-gap-fill-and-align">
@@ -101,8 +109,8 @@
                             <input class="form-control" type="text" placeholder="Search for Assignments">
                         </div>
                         <div class="wd-float-right">
-                            <button class="btn btn-light">+Group</button>
-                            <button class="btn btn-danger">+ Assignment</button>
+                            <button class="btn btn-light"><i class="fa-solid fa-plus"></i> Group</button>
+                            <button class="btn btn-danger"><i class="fa-solid fa-plus"></i> Assignment</button>
                             <button class="btn btn-light">
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </button>
@@ -127,7 +135,7 @@
                                     <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A1 SETUP</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A1 SETUP</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module |
                                         <br>
@@ -145,7 +153,7 @@
                                 <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A2 HTML</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A2 HTML</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |
                                         <br>
@@ -163,7 +171,7 @@
                                 <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A3 CSS</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A3 CSS</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module |
                                         <br>
@@ -181,7 +189,7 @@
                                 <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A4 BOOTSTRAP</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A4 BOOTSTRAP</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |
                                         <br>
@@ -199,7 +207,7 @@
                                 <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A5 JAVASCRIPT</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A5 JAVASCRIPT</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |
                                         <br>
@@ -217,7 +225,7 @@
                                 <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
                                 <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
                                 <div class="wd-inline wd-flex-grow-1">
-                                    <h5 class="pb-0 mb-0">A6 REACT</h5>
+                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A6 REACT</h5></a>
                                     <span class="wd-font-x-small">
                                         Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2022) Module |
                                         <br>
