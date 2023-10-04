@@ -93,6 +93,10 @@
     margin-left: 84px;
 }
 
+.wd-left-sidebar-gap-fill-and-align-home {
+    margin-left: 84px;
+}
+
 .wd-sub-sidebar > li > a {
     text-decoration: none;
     color: #c33234;
@@ -233,6 +237,7 @@
 .wd-dash-card-title {
     display: inline;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .wd-inline {
@@ -404,10 +409,8 @@
     .wd-sidebar {
         display: none;
     }
-    .wd-left-sidebar-gap-fill-and-align {
+    .wd-left-sidebar-gap-fill-and-align-home {
         display: none;
-    }
-    .wd-left-sidebar-gap-fill-and-align {
         margin-left: 0;
     }
     .wd-dashboard-header {
@@ -439,5 +442,10 @@
 }
 
 .wd-sub-left-menu > li > a {
+    text-decoration: none;
+}
+
+
+.wd-rmv-text-decoration {
     text-decoration: none;
 }
