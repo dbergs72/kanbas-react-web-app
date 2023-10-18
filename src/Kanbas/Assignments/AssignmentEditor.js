@@ -2,6 +2,7 @@ import React from "react";
 import db from "../Database";
 import { Link } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
+
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
   const assignment = db.assignments.find((a) => a._id === assignmentId);

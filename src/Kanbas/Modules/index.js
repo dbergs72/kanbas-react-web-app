@@ -5,7 +5,7 @@ function Modules() {
   return (
     <div>
       <ModuleSearchBar />
-        <hr className={"mt-0"}/>
+      <hr className={"mt-0"} />
       <ModuleList />
     </div>
   );

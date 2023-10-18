@@ -6,12 +6,12 @@ function Home() {
   return (
     <div className="row">
       <div className="col-10">
-          <ModuleSearchBar />
-          <hr className={"mt-0"}/>
-          <ModuleList />
+        <ModuleSearchBar />
+        <hr className={"mt-0"} />
+        <ModuleList />
       </div>
       <div className="col-2">
-          <StatusBar />
+        <StatusBar />
       </div>
     </div>
   );

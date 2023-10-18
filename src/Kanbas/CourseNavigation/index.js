@@ -18,7 +18,7 @@ function CourseNavigation() {
     "Outcomes",
     "Collaboration",
     "Syllabus",
-    "Settings"
+    "Settings",
   ];
   const { courseId } = useParams();
   const { pathname } = useLocation();
@@ -28,7 +28,9 @@ function CourseNavigation() {
         <Link
           key={index}
           to={`/Kanbas/Courses/${courseId}/${link}`}
-          className={`list-group-item ps-1 ${pathname.includes(link) && "active"}`}
+          className={`list-group-item ps-1 ${
+            pathname.includes(link) && "active"
+          }`}
         >
           {link}
         </Link>
