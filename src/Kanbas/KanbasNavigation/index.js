@@ -26,13 +26,13 @@ function KanbasNavigation() {
     "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
   const { pathname } = useLocation();
   return (
-    <div className={"list-group overflow-hidden position-fixed"} id={"wd-nav-bar"}>
+    <div className={"list-group position-fixed bottom-0"} id={"wd-nav-bar"}>
       <img src={require('./neu-logo.png')} className={`wd-nav-group-img`} alt="Northeastern"></img>
       {links_two.map(({icon, link}, index) => (
         <Link
           key={index}
           to={`/Kanbas/${link}`}
-          className={`list-group-item ${pathname.includes(link) && "active" }`}
+          className={`list-group-item border-0 ${pathname.includes(link) && "active" }`}
         >
           <span style={{ color: `${link === "Account" ? "lightgrey" : "#c33234"}` }}>{icon}</span>
           <br/>
