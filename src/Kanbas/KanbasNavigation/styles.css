@@ -1,0 +1,28 @@
+#wd-nav-bar {
+    background-color: black;
+    color: lightgrey;
+    text-align: center;
+    width: 84px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100vh;
+    border-radius: 0;
+}
+
+#wd-nav-bar .wd-nav-group-img {
+    width: 100%;
+}
+
+#wd-nav-bar .list-group-item {
+    display: block;
+    background-color: black;
+    color: lightgrey;
+    border-color: black;
+    font-size: 0.7rem;
+    padding: 10px 0 7px;
+}
+
+#wd-nav-bar .list-group-item.active {
+    color: #c33234;
+    background-color: white;
+}
