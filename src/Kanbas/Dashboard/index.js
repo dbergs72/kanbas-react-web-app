@@ -1,5 +1,4 @@
 import db from "../Database";
-import "./index.css";
 import { Link } from "react-router-dom";
 import "./style.css";
 import {BsThreeDotsVertical} from "react-icons/bs";

@@ -7,7 +7,7 @@ function Kanbas() {
   return (
     <div className="d-flex" style={{height: 100}}>
       <KanbasNavigation />
-      <div style={{ marginLeft: 84 }}>
+      <div className={"w-100"} style={{ marginLeft: 84 }}>
         <Routes>
             <Route path="/" element={<Navigate to={"Dashboard"} />} />
             <Route path="Account" element={<h1>Account</h1>} />

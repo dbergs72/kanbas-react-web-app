@@ -6,13 +6,22 @@ import Modules from "../Modules";
 import Home from "../Home";
 import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
+import {FaGripLines} from "react-icons/fa";
+import "./style.css";
 
 function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
   return (
-    <div>
-      <h1>Courses {course.name}</h1>
+    <div className={"container"}>
+      <div className={"d-flex flex-row"}>
+        <FaGripLines  size={30} className={"wd-kanbas-red"} style={{ paddingTop: 10, paddingLeft: 10}}/>
+        <ol className="breadcrumb pt-2 ps-4">
+          <li className="breadcrumb-item wd-kanbas-red">{course.name}</li>
+          <li className="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </div>
+      <hr className={"mt-0"}/>
       <div className="row">
         <div className="col">
           <CourseNavigation />
