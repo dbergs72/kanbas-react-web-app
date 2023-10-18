@@ -2,6 +2,8 @@ import React from "react";
 import db from "../Database";
 import { Link } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { AiFillCheckCircle } from "react-icons/ai";
 
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
@@ -14,18 +16,39 @@ function AssignmentEditor() {
   };
   return (
     <div>
-      <h1>Assignment Editor!!! {assignment.title}</h1>
-      <input className="form-control" defaultValue={assignment.title} />
-      <button onClick={handleSave} className="btn btn-success">
-        Save
-      </button>
-      <Link
-        className="btn btn-warning"
-        to={`/Kanbas/Courses/${courseId}/Assignments`}
+      <div
+        className={
+          "d-flex flex-row align-items-center justify-content-end mt-2"
+        }
       >
-        Cancel
-      </Link>
-      <button className="btn btn-danger">Delete</button>
+        <AiFillCheckCircle className={"text-success"} size={20} />
+        <span className={"text-success"}>Published</span>
+        <button className={"btn btn-light p-1 ms-2"}>
+          <BsThreeDotsVertical />
+        </button>
+      </div>
+      <hr />
+      <label for={"assignmentTitle"} className="form-label ps-2 mb-0">
+        Assignment Name
+      </label>
+      <input
+        id={"assignmentTitle"}
+        className="form-control"
+        defaultValue={assignment.title}
+      />
+      <hr />
+      <div className={"d-flex flex-row justify-content-end"}>
+        <Link
+          className="btn btn-light"
+          to={`/Kanbas/Courses/${courseId}/Assignments`}
+        >
+          Cancel
+        </Link>
+        <button onClick={handleSave} className="btn btn-danger">
+          Save
+        </button>
+      </div>
+      <hr />
     </div>
   );
 }

@@ -1,20 +1,17 @@
-import { useParams } from "react-router";
 import CourseNavigation from "../CourseNavigation";
-import db from "../Database";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Modules from "../Modules";
 import Home from "../Home";
 import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
-import { FaGripLines } from "react-icons/fa";
 import "./style.css";
-import BreadCrumb from "../BreadCrumb";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
 function Courses() {
   return (
     <div className={"ps-2"}>
-      <BreadCrumb />
-      <hr className={"mt-0"} />
+      <BreadCrumb className={"mb-2"} />
+      <hr />
       <CourseNavigation />
       <div>
         <div
