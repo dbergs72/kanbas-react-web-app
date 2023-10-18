@@ -6,21 +6,19 @@ function CourseNavigation() {
     "Home",
     "Modules",
     "Piazza",
-    "Zoom Meetings",
     "Assignments",
     "Quizzes",
     "Grades",
-      "People",
-      "Panopto Video",
-      "Discussions",
-      "Announcements",
-      "Pages",
-      "Files",
-      "Rubrics",
-      "Outcomes",
-      "Collaboration",
-      "Syllabus",
-      "Settings"
+    "People",
+    "Discussions",
+    "Announcements",
+    "Pages",
+    "Files",
+    "Rubrics",
+    "Outcomes",
+    "Collaboration",
+    "Syllabus",
+    "Settings"
   ];
   const { courseId } = useParams();
   const { pathname } = useLocation();
