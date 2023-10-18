@@ -26,7 +26,7 @@ function KanbasNavigation() {
     "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
   const { pathname } = useLocation();
   return (
-    <div className={"list-group overflow-hidden"} id={"wd-nav-bar"}>
+    <div className={"list-group overflow-hidden position-fixed"} id={"wd-nav-bar"}>
       <img src={require('./neu-logo.png')} className={`wd-nav-group-img`} alt="Northeastern"></img>
       {links_two.map(({icon, link}, index) => (
         <Link
@@ -34,9 +34,9 @@ function KanbasNavigation() {
           to={`/Kanbas/${link}`}
           className={`list-group-item ${pathname.includes(link) && "active" }`}
         >
-          {icon}
+          <span style={{ color: `${link === "Account" ? "lightgrey" : "#c33234"}` }}>{icon}</span>
           <br/>
-          {link}
+          <span style={{color: "lightgrey"}}>{link}</span>
         </Link>
       ))}
     </div>
