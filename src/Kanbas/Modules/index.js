@@ -1,9 +1,11 @@
 import ModuleList from "./ModuleList";
+import ModuleSearchBar from "./ModuleSearchBar";
 
 function Modules() {
   return (
     <div>
-      <h1>Modules</h1>
+      <ModuleSearchBar />
+        <hr className={"mt-0"}/>
       <ModuleList />
     </div>
   );

@@ -1,3 +1,5 @@
-.wd-background-lightgray {
-    background-color: lightgray;
+.wd-module {
+    background-color: lightgrey;
+    border-radius: 0;
+    border: 1px solid grey;
 }
