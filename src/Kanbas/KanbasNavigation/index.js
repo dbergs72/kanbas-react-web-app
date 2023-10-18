@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./styles.css";
+import "../styles.css";
 import {MdAccountCircle} from "react-icons/md";
 import {RiDashboard3Line} from "react-icons/ri";
 import {BiBook, BiLogoGmail} from "react-icons/bi";
@@ -34,9 +35,9 @@ function KanbasNavigation() {
           to={`/Kanbas/${link}`}
           className={`list-group-item border-0 ${pathname.includes(link) && "active" }`}
         >
-          <span style={{ color: `${link === "Account" ? "lightgrey" : "#c33234"}` }}>{icon}</span>
+          <span className={`${link === "Account" ? "wd-color-lightgrey" : "wd-color-kanbas-red"}`}>{icon}</span>
           <br/>
-          <span style={{color: "lightgrey"}}>{link}</span>
+          {link}
         </Link>
       ))}
     </div>

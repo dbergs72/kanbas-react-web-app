@@ -8,27 +8,16 @@ import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
 import {FaGripLines} from "react-icons/fa";
 import "./style.css";
+import BreadCrumb from "../BreadCrumb";
 
 function Courses() {
-  const { courseId } = useParams();
-  const { pathname } = useLocation();
-  let course = db.courses.find((course) => course._id === courseId);
-  if (course === undefined) {
-    course = {name: "Courses"};
-  }
   return (
     <div className={"ps-2"}>
-      <div className={"d-flex flex-row"}>
-        <FaGripLines  size={30} className={"wd-kanbas-red"} style={{ paddingTop: 10, paddingLeft: 10}}/>
-        <ol className="breadcrumb pt-2 ps-4">
-          <li className="breadcrumb-item wd-kanbas-red">{course.name}</li>
-          <li className="breadcrumb-item active" aria-current="page">{pathname.substring(pathname.lastIndexOf("/") + 1)}</li>
-        </ol>
-      </div>
+      <BreadCrumb />
       <hr className={"mt-0"}/>
       <CourseNavigation />
       <div>
-        <div className="overflow-y-scroll position-fixed bottom-0 end-0"
+        <div className="overflow-y-scroll position-fixed bottom-0 end-0 pe-2"
          style={{
            left: "234px",
            top: "50px",
