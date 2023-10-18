@@ -1,459 +1,584 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<div>
-    <div class="wd-hidden-top-bar" style="z-index: 999;">
+    <link rel="stylesheet" href="style.css" />
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div class="wd-hidden-top-bar" style="z-index: 999">
         <div class="container">
-            <div class="row wd-color-white">
-                <div class="col-1">
-                    <div class="dropdown">
-                        <button class="wd-remove-background mt-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-grip-lines wd-color-white"></i>
-                        </button>
-                        <ul class="dropdown-menu wd-mini-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a href="#" class="float-end pe-3" style="color: black">X</a></li>
-                            <li class="wd-clear-both"><a href="./profile/profile-sub-column.html">
-                                <i class="fa-regular fa-user wd-color-lightgrey"></i>Account</a></li>
-                            <li><a href="./dashboard/index.html">
-                                <i class="fa-solid fa-gauge wd-color-red"></i>Dashboard</a></li>
-                            <li><a href="./courses-sub-column.html" class="wd-background-white">
-                                <i class="fa-solid fa-book wd-color-red"></i>Courses</a></li>
-                            <li><a href="#">
-                                <i class="fa-solid fa-calendar wd-color-red"></i>Calendar</a></li>
-                            <li><a href="#">
-                                <i class="fa-solid fa-inbox wd-color-red"></i>Inbox</a></li>
-                            <li><a href="#">
-                                <i class="fa-regular fa-clock wd-color-red"></i>History</a></li>
-                            <li><a href="#">
-                                <i class="fa-solid fa-computer wd-color-red"></i>Studio</a></li>
-                            <li><a href="#">
-                                <i class="fa-regular fa-square wd-color-red"></i>Commons</a></li>
-                            <li><a href="#">
-                                <i class="fa-solid fa-question wd-color-red"></i>Help</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-10">
-                    CS4550.11744.202310
-                    <br>
-                    Modules
-                </div>
-                <div class="col-1">
-                    <div class="dropdown">
-                        <button class="wd-remove-background mt-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-caret-down wd-color-white me-1"></i>
-                        </button>
-                        <ul class="dropdown-menu wd-mini-menu" style="width: 100vh" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="home.html">Home</a></li>
-                            <li><a class="dropdown-item" href="#">Modules</a></li>
-                            <li><a class="dropdown-item" href="#">Piazza</a></li>
-                            <li><a class="dropdown-item" href="#">Zoom Meetings</a></li>
-                            <li><a class="dropdown-item" href="./assignments/index.html">Assignments</a></li>
-                            <li><a class="dropdown-item" href="">Quizzes</a></li>
-                            <li><a class="dropdown-item" href="./grades.html">Grades</a>
-                            <li><a class="dropdown-item" href="#">People</a></li>
-                            <li><a class="dropdown-item" href="#">Panopto Video</a></li>
-                            <li><a class="dropdown-item" href="#">Discussions</a></li>
-                            <li><a class="dropdown-item" href="#">Announcements</a></li>
-                            <li><a class="dropdown-item" href="#">Pages</a></li>
-                            <li><a class="dropdown-item" href="#">Files</a></li>
-                            <li><a class="dropdown-item" href="#">Rubrics</a></li>
-                            <li><a class="dropdown-item" href="#">Outcomes</a></li>
-                            <li><a class="dropdown-item" href="#">Collaborations</a></li>
-                            <li><a class="dropdown-item" href="#">Syllabus</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="wd-sidebar">
-        <ul>
-            <li><img src="../images/neu-logo.png" alt="Northeastern" class="w-100"></li>
-            <li><a href="./profile/profile-sub-column.html">
-                <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
-                <div class="wd-sidebar-text">Account</div>
-            </a></li>
-            <li><a href="./dashboard/index.html">
-                <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Dashboard</div>
-            </a></li>
-            <li><a href="./courses-sub-column.html" class="wd-background-white">
-                <i class="fa-solid fa-book fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text"><span class="wd-color-red">Courses</span></div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Calendar</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Inbox</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">History</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Studio</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-square fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Commons</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-question fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Help</div>
-            </a></li>
-        </ul>
-    </div>
-    <div class="wd-left-sidebar-gap-fill-and-align-home pt-3">
-        <div class="wd-flex">
-            <div>
-                <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
-            </div>
-            <div class="flex-grow-1">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item wd-color-red"> CS4550.11744.202310</li>
-                        <li class="breadcrumb-item active" aria-current="page">Home</li>
-                    </ol>
-                </nav>
-            </div>
-            <div>
-                <button class="btn btn-light me-3 mb-1">
-                    <i class="fa-solid fa-glasses"></i>
-                    Student View
+          <div class="row wd-color-white">
+            <div class="col-1">
+              <div class="dropdown">
+                <button
+                  class="wd-remove-background mt-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-grip-lines wd-color-white"></i>
                 </button>
+                <ul
+                  class="dropdown-menu wd-mini-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a href="#" class="float-end pe-3" style="color: black"
+                      >X</a
+                    >
+                  </li>
+                  <li class="wd-clear-both">
+                    <a href="./profile/profile-sub-column.html">
+                      <i class="fa-regular fa-user wd-color-lightgrey"></i
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./dashboard/index.html">
+                      <i class="fa-solid fa-gauge wd-color-red"></i>Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./courses-sub-column.html"
+                      class="wd-background-white"
+                    >
+                      <i class="fa-solid fa-book wd-color-red"></i>Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-calendar wd-color-red"></i
+                      >Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-inbox wd-color-red"></i>Inbox</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-clock wd-color-red"></i>History</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-computer wd-color-red"></i>Studio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-square wd-color-red"></i
+                      >Commons</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-question wd-color-red"></i>Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-10">
+              CS4550.11744.202310
+              <br />
+              Modules
+            </div>
+            <div class="col-1">
+              <div class="dropdown">
+                <button
+                  class="wd-remove-background mt-2"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-caret-down wd-color-white me-1"></i>
+                </button>
+                <ul
+                  class="dropdown-menu wd-mini-menu"
+                  style="width: 100vh"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li><a class="dropdown-item" href="home.html">Home</a></li>
+                  <li><a class="dropdown-item" href="#">Modules</a></li>
+                  <li><a class="dropdown-item" href="#">Piazza</a></li>
+                  <li><a class="dropdown-item" href="#">Zoom Meetings</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./assignments/index.html"
+                      >Assignments</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="">Quizzes</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./grades.html">Grades</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">People</a></li>
+                  <li><a class="dropdown-item" href="#">Panopto Video</a></li>
+                  <li><a class="dropdown-item" href="#">Discussions</a></li>
+                  <li><a class="dropdown-item" href="#">Announcements</a></li>
+                  <li><a class="dropdown-item" href="#">Pages</a></li>
+                  <li><a class="dropdown-item" href="#">Files</a></li>
+                  <li><a class="dropdown-item" href="#">Rubrics</a></li>
+                  <li><a class="dropdown-item" href="#">Outcomes</a></li>
+                  <li><a class="dropdown-item" href="#">Collaborations</a></li>
+                  <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <hr class="pe-1 me-3 ms-3 mt-0">
-    </div>
-    <div class="wd-main-page">
-        <div class="wd-left-sidebar-gap-fill-and-align-home">
-            <ul class="wd-sub-sidebar">
-                <li class="wd-sub-sidebar-selected">
-                    <a href="home.html">
-                        <span class="wd-color-black">Home</span>
-                    </a>
+      </div>
+      <div class="wd-sidebar">
+        <ul>
+          <li>
+            <img
+              src="../images/neu-logo.png"
+              alt="Northeastern"
+              class="w-100"
+            />
+          </li>
+          <li>
+            <a href="./profile/profile-sub-column.html">
+              <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
+              <div class="wd-sidebar-text">Account</div>
+            </a>
+          </li>
+          <li>
+            <a href="./dashboard/index.html">
+              <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="./courses-sub-column.html" class="wd-background-white">
+              <i class="fa-solid fa-book fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">
+                <span class="wd-color-red">Courses</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Calendar</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Inbox</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">History</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Studio</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-square fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Commons</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-question fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Help</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="wd-left-sidebar-gap-fill-and-align-home pt-3">
+        <div class="wd-flex">
+          <div>
+            <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
+          </div>
+          <div class="flex-grow-1">
+            <nav
+              style="--bs-breadcrumb-divider: &quot;>&quot;"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item wd-color-red">
+                  CS4550.11744.202310
                 </li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="./assignments/index.html">Assignments</a></li>
-                <li><a href="">Quizzes</a></li>
-                <li><a href="./grades.html">Grades</a>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+          </div>
+          <div>
+            <button class="btn btn-light me-3 mb-1">
+              <i class="fa-solid fa-glasses"></i>
+              Student View
+            </button>
+          </div>
+        </div>
+        <hr class="pe-1 me-3 ms-3 mt-0" />
+      </div>
+      <div class="wd-main-page">
+        <div class="wd-left-sidebar-gap-fill-and-align-home">
+          <ul class="wd-sub-sidebar">
+            <li class="wd-sub-sidebar-selected">
+              <a href="home.html">
+                <span class="wd-color-black">Home</span>
+              </a>
+            </li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="./assignments/index.html">Assignments</a></li>
+            <li><a href="">Quizzes</a></li>
+            <li><a href="./grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
         </div>
         <div class="wd-page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col wd-right-align">
-                            <button class="btn btn-light">Collapse All</button>
-                            <button class="btn btn-light">View Progress</button>
-                            <button class="btn btn-light">
-                                <i class="fa-solid fa-circle-check wd-color-green"></i>
-                                Publish All
-                            </button>
-                            <button class="btn btn-danger">+ Module</button>
-                            <button class="btn btn-light">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </button>
-                        <div class="wd-clear-both"><hr></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="list-group">
-                        <div class="list-group-item p-0">
-                            <div class="wd-flex wd-background-color-lightgrey p-3">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <i class="fa-solid fa-caret-down me-1"></i>
-                                    <span class="wd-font-weight-600">Module 1</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green"></i>
-                                    <i class="fa-solid fa-caret-down me-1"></i>
-                                    <i class="fa-solid fa-plus me-2"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large">LEARNING OBJECTIVES</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large ps-5">Learn it all</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large">READING</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <a href="#" class="wd-red-no-under-links">
-                                        <i class="fa-solid fa-link wd-color-green"></i>
-                                        <span class="wd-font-size-large ps-5">Chapter 1</span></a>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <a href="#" class="wd-red-no-under-links">
-                                        <i class="fa-solid fa-link wd-color-green"></i>
-                                        <span class="wd-font-size-large ps-5">Chapter 2</span></a>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="list-group">
-                        <div class="list-group-item p-0">
-                            <div class="wd-flex wd-background-color-lightgrey p-3">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <i class="fa-solid fa-caret-down me-1"></i>
-                                    <span class="wd-font-weight-600">Module 2</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green"></i>
-                                    <i class="fa-solid fa-caret-down me-1"></i>
-                                    <i class="fa-solid fa-plus me-2"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large">LEARNING OBJECTIVES</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large ps-5">Learn the good stuff</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <span class="wd-font-size-large">Quizzes</span>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <a href="#" class="wd-red-no-under-links">
-                                        <i class="fa-solid fa-link wd-color-green"></i>
-                                        <span class="wd-font-size-large ps-5">Quiz 1</span></a>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="wd-flex">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <a href="#" class="wd-red-no-under-links">
-                                        <i class="fa-solid fa-link wd-color-green"></i>
-                                        <span class="wd-font-size-large ps-5">Quiz 2</span></a>
-                                </div>
-                                <div class="float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col wd-right-align">
+                <button class="btn btn-light">Collapse All</button>
+                <button class="btn btn-light">View Progress</button>
+                <button class="btn btn-light">
+                  <i class="fa-solid fa-circle-check wd-color-green"></i>
+                  Publish All
+                </button>
+                <button class="btn btn-danger">+ Module</button>
+                <button class="btn btn-light">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <div class="wd-clear-both"><hr /></div>
+              </div>
             </div>
+            <div class="row">
+              <div class="list-group">
+                <div class="list-group-item p-0">
+                  <div class="wd-flex wd-background-color-lightgrey p-3">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <i class="fa-solid fa-caret-down me-1"></i>
+                      <span class="wd-font-weight-600">Module 1</span>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-circle-check wd-color-green"></i>
+                      <i class="fa-solid fa-caret-down me-1"></i>
+                      <i class="fa-solid fa-plus me-2"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large"
+                        >LEARNING OBJECTIVES</span
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large ps-5">Learn it all</span>
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large">READING</span>
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <a href="#" class="wd-red-no-under-links">
+                        <i class="fa-solid fa-link wd-color-green"></i>
+                        <span class="wd-font-size-large ps-5"
+                          >Chapter 1</span
+                        ></a
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <a href="#" class="wd-red-no-under-links">
+                        <i class="fa-solid fa-link wd-color-green"></i>
+                        <span class="wd-font-size-large ps-5"
+                          >Chapter 2</span
+                        ></a
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="list-group">
+                <div class="list-group-item p-0">
+                  <div class="wd-flex wd-background-color-lightgrey p-3">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <i class="fa-solid fa-caret-down me-1"></i>
+                      <span class="wd-font-weight-600">Module 2</span>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-circle-check wd-color-green"></i>
+                      <i class="fa-solid fa-caret-down me-1"></i>
+                      <i class="fa-solid fa-plus me-2"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large"
+                        >LEARNING OBJECTIVES</span
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large ps-5"
+                        >Learn the good stuff</span
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <span class="wd-font-size-large">Quizzes</span>
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <a href="#" class="wd-red-no-under-links">
+                        <i class="fa-solid fa-link wd-color-green"></i>
+                        <span class="wd-font-size-large ps-5">Quiz 1</span></a
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="wd-flex">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <a href="#" class="wd-red-no-under-links">
+                        <i class="fa-solid fa-link wd-color-green"></i>
+                        <span class="wd-font-size-large ps-5">Quiz 2</span></a
+                      >
+                    </div>
+                    <div class="float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="wd-right-sidebar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 wd-left-align">
-                        Course Status
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6  p-0">
-                        <button class="btn btn-light text-nowrap">
-                            <i class="fa-solid fa-ban"></i>
-                            Unpublished
-                        </button>
-                    </div>
-                    <div class="col-6  p-0">
-                        <button class="btn btn-success">
-                            <i class="fa-regular fa-circle-check"></i>
-                            Published
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-3 mb-1">
-                    <div class="col-12">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-file-import"></i>
-                            Import Existing Content
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col-12">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-upload"></i>
-                            Import from Commons
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col-12">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-bullseye"></i>
-                            Choose Home Page
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            View Course Stream
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-bullhorn"></i>
-                            New Announcements
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            New Analytics
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-1 mb-1">
-                    <div class="col">
-                        <button class="btn btn-light w-100">
-                            <i class="fa-regular fa-bell"></i>
-                            View Course Information
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 wd-font-weight-700">
-                        ToDo
-                        <hr class="mt-1">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">quizzes</div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 wd-font-weight-700">
-                        Coming Up
-                        <hr class="mt-1">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">tests</div>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 wd-left-align">Course Status</div>
             </div>
+            <div class="row">
+              <div class="col-6 p-0">
+                <button class="btn btn-light text-nowrap">
+                  <i class="fa-solid fa-ban"></i>
+                  Unpublished
+                </button>
+              </div>
+              <div class="col-6 p-0">
+                <button class="btn btn-success">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Published
+                </button>
+              </div>
+            </div>
+            <div class="row mt-3 mb-1">
+              <div class="col-12">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-file-import"></i>
+                  Import Existing Content
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col-12">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-upload"></i>
+                  Import from Commons
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col-12">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-bullseye"></i>
+                  Choose Home Page
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  View Course Stream
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-bullhorn"></i>
+                  New Announcements
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col">
+                <button class="btn btn-light w-100">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  New Analytics
+                </button>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col">
+                <button class="btn btn-light w-100">
+                  <i class="fa-regular fa-bell"></i>
+                  View Course Information
+                </button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 wd-font-weight-700">
+                ToDo
+                <hr class="mt-1" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">quizzes</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 wd-font-weight-700">
+                Coming Up
+                <hr class="mt-1" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">tests</div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-</div>
-
-</body>
+  </body>
 </html>

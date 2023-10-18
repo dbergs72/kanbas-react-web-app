@@ -7,18 +7,18 @@ import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./todo/TodoList";
 
 function Assignment3() {
-    return(
-        <div className="container">
-            <h1>Assignment 3</h1>
-            <TodoList />
-            <ConditionalOutput />
-            <Styles />
-            <Classes />
-            <DynamicStyling />
-            <PathParameters />
-            <JavaScript />
-        </div>
-    )
+  return (
+    <div className="container">
+      <h1>Assignment 3</h1>
+      <TodoList />
+      <ConditionalOutput />
+      <Styles />
+      <Classes />
+      <DynamicStyling />
+      <PathParameters />
+      <JavaScript />
+    </div>
+  );
 }
 
 export default Assignment3;

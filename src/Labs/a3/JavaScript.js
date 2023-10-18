@@ -12,24 +12,24 @@ import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
 
 function JavaScript() {
-    console.log("Hello world");
-    return (
+  console.log("Hello world");
+  return (
     <div>
-        <h1>JavaScript</h1>
-        <FunctionDestructing />
-        <Destructing />
-        <Spread />
-        <House />
-        <TemplateLiterals />
-        <WorkingWithArrays />
-        <WorkingWithFunctions />
-        <TernaryOperator />
-        <IfElse />
-        <BooleanVariables />
-        <VariableTypes />
-        <VariablesAndConstants />
+      <h1>JavaScript</h1>
+      <FunctionDestructing />
+      <Destructing />
+      <Spread />
+      <House />
+      <TemplateLiterals />
+      <WorkingWithArrays />
+      <WorkingWithFunctions />
+      <TernaryOperator />
+      <IfElse />
+      <BooleanVariables />
+      <VariableTypes />
+      <VariablesAndConstants />
     </div>
-    );
-};
+  );
+}
 
 export default JavaScript;

@@ -1,5 +1,3 @@
-function DynamicStyling() {
-
-}
+function DynamicStyling() {}
 
 export default DynamicStyling;

@@ -1,224 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<div>
-    <div class="wd-sidebar">
+    <link rel="stylesheet" href="style.css" />
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div class="wd-sidebar">
         <ul>
-            <li><img src="../images/neu-logo.png" alt="Northeastern" class="w-100"></li>
-            <li><a href="./profile/profile-sub-column.html">
-                <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
-                <div class="wd-sidebar-text">Account</div>
-            </a></li>
-            <li><a href="./dashboard/index.html">
-                <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Dashboard</div>
-            </a></li>
-            <li><a href="./courses-sub-column.html" class="wd-background-white">
-                <i class="fa-solid fa-book fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text"><span class="wd-color-red">Courses</span></div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Calendar</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Inbox</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">History</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Studio</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-square fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Commons</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-question fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Help</div>
-            </a></li>
+          <li>
+            <img
+              src="../images/neu-logo.png"
+              alt="Northeastern"
+              class="w-100"
+            />
+          </li>
+          <li>
+            <a href="./profile/profile-sub-column.html">
+              <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
+              <div class="wd-sidebar-text">Account</div>
+            </a>
+          </li>
+          <li>
+            <a href="./dashboard/index.html">
+              <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="./courses-sub-column.html" class="wd-background-white">
+              <i class="fa-solid fa-book fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">
+                <span class="wd-color-red">Courses</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Calendar</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Inbox</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">History</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Studio</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-square fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Commons</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-question fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Help</div>
+            </a>
+          </li>
         </ul>
-    </div>
-    <div class="wd-left-sidebar-gap-fill-and-align pt-3">
+      </div>
+      <div class="wd-left-sidebar-gap-fill-and-align pt-3">
         <div class="wd-flex">
-            <div>
-                <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
-            </div>
-            <div class="flex-grow-1">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item wd-color-red"> CS4550.11744.202310</li>
-                        <li class="breadcrumb-item active" aria-current="page">Grades</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <hr class="pe-1 me-3 ms-3 mt-0">
-    </div>
-    <div class="wd-main-page">
-        <div class="wd-left-sidebar-gap-fill-and-align">
-            <ul class="wd-sub-sidebar">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="assignments/index.html">Assignments</a></li>
-                <li><a href="">Quizzes</a></li>
-                <li class="wd-sub-sidebar-selected">
-                    <a href="grades.html">
-                        <span class="wd-color-black">Grades</span>
-                    </a>
+          <div>
+            <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
+          </div>
+          <div class="flex-grow-1">
+            <nav
+              style="--bs-breadcrumb-divider: &quot;>&quot;"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item wd-color-red">
+                  CS4550.11744.202310
                 </li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Grades
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <hr class="pe-1 me-3 ms-3 mt-0" />
+      </div>
+      <div class="wd-main-page">
+        <div class="wd-left-sidebar-gap-fill-and-align">
+          <ul class="wd-sub-sidebar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="assignments/index.html">Assignments</a></li>
+            <li><a href="">Quizzes</a></li>
+            <li class="wd-sub-sidebar-selected">
+              <a href="grades.html">
+                <span class="wd-color-black">Grades</span>
+              </a>
+            </li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
         </div>
         <div class="wd-page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 wd-right-align">
-                        <button type="button" class="btn btn-light">
-                            <i class="fa-solid fa-file-import"></i>
-                            Import
-                        </button>
-                        <div class="dropdown wd-inline">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-file-export"></i>
-                                Export
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Option2</a></li>
-                                <li><a class="dropdown-item" href="#">Option3</a></li>
-                                <li><a class="dropdown-item" href="#">Option4</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-light">
-                            <i class="fa-solid fa-gear"></i>
-                        </button>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 wd-right-align">
+                <button type="button" class="btn btn-light">
+                  <i class="fa-solid fa-file-import"></i>
+                  Import
+                </button>
+                <div class="dropdown wd-inline">
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-file-export"></i>
+                    Export
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Option2</a></li>
+                    <li><a class="dropdown-item" href="#">Option3</a></li>
+                    <li><a class="dropdown-item" href="#">Option4</a></li>
+                  </ul>
                 </div>
-                <div class="row">
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <label for="grades-stdnt-search">
-                                    <h6 class="wd-font-weight-600">Student Names</h6>
-                                </label>
-                                <input type="text" id="grades-stdnt-search" name="grades-stdnt-search" placeholder="Search Students" class="form-select">
-                                <button type="button" class="btn btn-light">
-                                    <i class="fa-solid fa-filter"></i>
-                                    Apply Filters
-                                </button>
-                            </div>
-                            <div class="col">
-                                <label for="grades-asgnmt-search">
-                                    <h6 class="wd-font-weight-600">Assignment Names</h6>
-                                </label>
-                                <input type="text" id="grades-asgnmt-search" name="grades-asgnmt-search" placeholder="Search Assignments" class="form-control">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="grades-table pt-5">
-                            <table class="table table-striped table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <th><span class="wd-color-black wd-font-weight-400">Student Name</span></th>
-                                        <td>A1 Setup Out of 100</td>
-                                        <td>A2 HTML Out of 100</td>
-                                        <td>A3 CSS Out of 100</td>
-                                        <td>A4 Boostrap Out of 100</td>
-                                        <td>A5 JAVASCRIPT Out of 100</td>
-                                        <td>A6 REACT Out of 100</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span class="wd-color-red">Michael Scott</span></th>
-                                        <td><input type="number" value="98" min="0" max="100" class="form-control w-auto"/></td>
-                                        <td>83</td>
-                                        <td>70</td>
-                                        <td>88</td>
-                                        <td>90</td>
-                                        <td>91</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Pam Beesly</th>
-                                        <td>78</td>
-                                        <td>83</td>
-                                        <td><input type="number" value="89" min="0" max="100" class="form-control w-auto"/></td>
-                                        <td>95</td>
-                                        <td>99</td>
-                                        <td>100</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Jim Halpert</th>
-                                        <td>72</td>
-                                        <td>73</td>
-                                        <td>70</td>
-                                        <td><input type="number" value="78" min="0" max="100" class="form-control w-auto"/></td>
-                                        <td>80</td>
-                                        <td>81</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Dwight Schrute</th>
-                                        <td>98</td>
-                                        <td>99</td>
-                                        <td>95</td>
-                                        <td>94</td>
-                                        <td>93</td>
-                                        <td><input type="number" value="90" min="0" max="100" class="form-control w-auto"/></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Angela Martin</th>
-                                        <td>98</td>
-                                        <td>83</td>
-                                        <td>50</td>
-                                        <td>88</td>
-                                        <td><input type="number" value="60" min="0" max="100" class="form-control w-auto"/></td>
-                                        <td>79</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Kevin Malone</th>
-                                        <td>40</td>
-                                        <td class="text-center">
-                                            <input type="number" value="10" min="0" max="100" class="form-control w-auto"/></td>
-                                        <td>10</td>
-                                        <td>50</td>
-                                        <td>34</td>
-                                        <td>30</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                <button type="button" class="btn btn-light">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+              </div>
             </div>
+            <div class="row">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="grades-stdnt-search">
+                      <h6 class="wd-font-weight-600">Student Names</h6>
+                    </label>
+                    <input
+                      type="text"
+                      id="grades-stdnt-search"
+                      name="grades-stdnt-search"
+                      placeholder="Search Students"
+                      class="form-select"
+                    />
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-filter"></i>
+                      Apply Filters
+                    </button>
+                  </div>
+                  <div class="col">
+                    <label for="grades-asgnmt-search">
+                      <h6 class="wd-font-weight-600">Assignment Names</h6>
+                    </label>
+                    <input
+                      type="text"
+                      id="grades-asgnmt-search"
+                      name="grades-asgnmt-search"
+                      placeholder="Search Assignments"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="grades-table pt-5">
+                  <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>
+                          <span class="wd-color-black wd-font-weight-400"
+                            >Student Name</span
+                          >
+                        </th>
+                        <td>A1 Setup Out of 100</td>
+                        <td>A2 HTML Out of 100</td>
+                        <td>A3 CSS Out of 100</td>
+                        <td>A4 Boostrap Out of 100</td>
+                        <td>A5 JAVASCRIPT Out of 100</td>
+                        <td>A6 REACT Out of 100</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <span class="wd-color-red">Michael Scott</span>
+                        </th>
+                        <td>
+                          <input
+                            type="number"
+                            value="98"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                        <td>83</td>
+                        <td>70</td>
+                        <td>88</td>
+                        <td>90</td>
+                        <td>91</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pam Beesly</th>
+                        <td>78</td>
+                        <td>83</td>
+                        <td>
+                          <input
+                            type="number"
+                            value="89"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                        <td>95</td>
+                        <td>99</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jim Halpert</th>
+                        <td>72</td>
+                        <td>73</td>
+                        <td>70</td>
+                        <td>
+                          <input
+                            type="number"
+                            value="78"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                        <td>80</td>
+                        <td>81</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dwight Schrute</th>
+                        <td>98</td>
+                        <td>99</td>
+                        <td>95</td>
+                        <td>94</td>
+                        <td>93</td>
+                        <td>
+                          <input
+                            type="number"
+                            value="90"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Angela Martin</th>
+                        <td>98</td>
+                        <td>83</td>
+                        <td>50</td>
+                        <td>88</td>
+                        <td>
+                          <input
+                            type="number"
+                            value="60"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                        <td>79</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kevin Malone</th>
+                        <td>40</td>
+                        <td class="text-center">
+                          <input
+                            type="number"
+                            value="10"
+                            min="0"
+                            max="100"
+                            class="form-control w-auto"
+                          />
+                        </td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>34</td>
+                        <td>30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>

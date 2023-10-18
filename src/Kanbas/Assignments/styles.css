@@ -1,23 +1,23 @@
 .wd-right-align {
-    text-align: right;
+  text-align: right;
 }
 
 .wd-background-color-lightgrey {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 .wd-font-weight-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .wd-assignments-drop-down-heading-percent-bubble {
-    text-align: center;
-    border-color: grey;
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px;
+  text-align: center;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
 }
 
 .wd-height-100-percent {
-    height: 100%;
+  height: 100%;
 }

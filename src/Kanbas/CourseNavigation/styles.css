@@ -1,17 +1,17 @@
 #wd-courses-nav-bar {
-    width: 150px;
-    color: #0a3622;
-    text-align: left;
+  width: 150px;
+  color: #0a3622;
+  text-align: left;
 }
 
 #wd-courses-nav-bar .list-group-item {
-    color: #c33234;
-    background-color: white;
-    border-width: 0;
-    border-radius: 0;
+  color: #c33234;
+  background-color: white;
+  border-width: 0;
+  border-radius: 0;
 }
 
 #wd-courses-nav-bar .list-group-item.active {
-    color: black;
-    border-left: black 2px solid;
+  color: black;
+  border-left: black 2px solid;
 }

@@ -1,259 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="../style.css">
-    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<div>
-    <div class="wd-sidebar">
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div class="wd-sidebar">
         <ul>
-            <li><img src="../../images/neu-logo.png" alt="Northeastern" class="w-100"></li>
-            <li><a href="./../profile/profile-sub-column.html">
-                <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
-                <div class="wd-sidebar-text">Account</div>
-            </a></li>
-            <li><a href="./../dashboard/index.html">
-                <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Dashboard</div>
-            </a></li>
-            <li><a href="./../courses-sub-column.html" class="wd-background-white">
-                <i class="fa-solid fa-book fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text"><span class="wd-color-red">Courses</span></div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Calendar</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Inbox</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">History</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Studio</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-regular fa-square fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Commons</div>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-question fa-2x wd-color-red"></i>
-                <div class="wd-sidebar-text">Help</div>
-            </a></li>
+          <li>
+            <img
+              src="../../images/neu-logo.png"
+              alt="Northeastern"
+              class="w-100"
+            />
+          </li>
+          <li>
+            <a href="./../profile/profile-sub-column.html">
+              <i class="fa-regular fa-user fa-2x wd-color-lightgrey"></i>
+              <div class="wd-sidebar-text">Account</div>
+            </a>
+          </li>
+          <li>
+            <a href="./../dashboard/index.html">
+              <i class="fa-solid fa-gauge fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="./../courses-sub-column.html" class="wd-background-white">
+              <i class="fa-solid fa-book fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">
+                <span class="wd-color-red">Courses</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-calendar fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Calendar</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-inbox fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Inbox</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-clock fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">History</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-computer fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Studio</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-square fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Commons</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-question fa-2x wd-color-red"></i>
+              <div class="wd-sidebar-text">Help</div>
+            </a>
+          </li>
         </ul>
-    </div>
-    <div class="wd-left-sidebar-gap-fill-and-align pt-3">
+      </div>
+      <div class="wd-left-sidebar-gap-fill-and-align pt-3">
         <div class="wd-flex">
-            <div>
-                <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
-            </div>
-            <div class="flex-grow-1">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item wd-color-red"> CS4550.11744.202310</li>
-                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
-                    </ol>
-                </nav>
-            </div>
-            <div>
-                <button class="btn btn-light me-3 mb-1">
-                    <i class="fa-solid fa-glasses"></i>
-                    Student View
-                </button>
-            </div>
-        </div>
-        <hr class="pe-1 me-3 ms-3 mt-0">
-    </div>
-    <div class="wd-main-page">
-        <div class="wd-left-sidebar-gap-fill-and-align">
-            <ul class="wd-sub-sidebar">
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li class="wd-sub-sidebar-selected">
-                    <a href="index.html">
-                        <span class="wd-color-black">Assignments</span>
-                    </a>
+          <div>
+            <i class="fa-solid fa-grip-lines me-5 ms-4 wd-color-red"></i>
+          </div>
+          <div class="flex-grow-1">
+            <nav
+              style="--bs-breadcrumb-divider: &quot;>&quot;"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item wd-color-red">
+                  CS4550.11744.202310
                 </li>
-                <li><a href="">Quizzes</a></li>
-                <li><a href="../grades.html">Grades</a>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Assignments
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div>
+            <button class="btn btn-light me-3 mb-1">
+              <i class="fa-solid fa-glasses"></i>
+              Student View
+            </button>
+          </div>
+        </div>
+        <hr class="pe-1 me-3 ms-3 mt-0" />
+      </div>
+      <div class="wd-main-page">
+        <div class="wd-left-sidebar-gap-fill-and-align">
+          <ul class="wd-sub-sidebar">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li class="wd-sub-sidebar-selected">
+              <a href="index.html">
+                <span class="wd-color-black">Assignments</span>
+              </a>
+            </li>
+            <li><a href="">Quizzes</a></li>
+            <li><a href="../grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
         </div>
         <div class="wd-page-content">
-            <div class="container wd-width-100-percent">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="wd-flex">
-                            <div class="flex-grow-1">
-                                <input type="text" class="form-control w-25" placeholder="Search for Assignment">
-                            </div>
-                            <div class="wd-right-align">
-                                <button class="btn btn-light">
-                                    <i class="fa-solid fa-plus"></i>
-                                    Group
-                                </button>
-                                <button class="btn btn-danger">
-                                    <i class="fa-solid fa-plus"></i>
-                                    Assignment
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="wd-clear-both pt-0"><hr></div>
-                    </div>
-                    <div class="list-group">
-                        <div class="list-group-item p-0">
-                            <div class="wd-flex wd-background-color-lightgrey p-3">
-                                <div class="wd-left-align wd-flex-grow-1">
-                                    <i class="fa-solid fa-grip-vertical me-2"></i>
-                                    <i class="fa-solid fa-caret-down me-1"></i>
-                                    <span class="wd-font-weight-600">Assignments</span>
-                                </div>
-                                <div class="float-end">
-                                    <span class="rounded-pill wd-assignments-drop-down-heading-percent-bubble me-1">40% of Total</span>
-                                    <i class="fa-solid fa-plus me-2"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A1 SETUP</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module |
-                                        <br>
-                                        Due Sep 18, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A2 HTML</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |
-                                        <br>
-                                        Due Sep 25, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A3 CSS</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module |
-                                        <br>
-                                        Due Oct 2, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A4 BOOTSTRAP</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |
-                                        <br>
-                                        Due Oct 10, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A5 JavaScript</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |
-                                        <br>
-                                        Due Oct 10, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item" style="border-left-color: green; border-left-width: 4px;">
-                            <div class="wd-flex">
-                                <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
-                                <i class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"></i>
-                                <div class="wd-inline wd-flex-grow-1">
-                                    <a href="edit.html" class="wd-black-no-under-links"><h5 class="pb-0 mb-0">A6 REACT</h5></a>
-                                    <span class="wd-font-x-small">
-                                        Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2022) Module |
-                                        <br>
-                                        Due Oct 23, 2022 at 11:59pm | 100 pts
-                                    </span>
-                                </div>
-                                <div class="mt-4 float-end">
-                                    <i class="fa-solid fa-circle-check wd-color-green me-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container wd-width-100-percent">
+            <div class="row">
+              <div class="col-12">
+                <div class="wd-flex">
+                  <div class="flex-grow-1">
+                    <input
+                      type="text"
+                      class="form-control w-25"
+                      placeholder="Search for Assignment"
+                    />
+                  </div>
+                  <div class="wd-right-align">
+                    <button class="btn btn-light">
+                      <i class="fa-solid fa-plus"></i>
+                      Group
+                    </button>
+                    <button class="btn btn-danger">
+                      <i class="fa-solid fa-plus"></i>
+                      Assignment
+                    </button>
+                    <button class="btn btn-light">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
                 </div>
+                <div class="wd-clear-both pt-0"><hr /></div>
+              </div>
+              <div class="list-group">
+                <div class="list-group-item p-0">
+                  <div class="wd-flex wd-background-color-lightgrey p-3">
+                    <div class="wd-left-align wd-flex-grow-1">
+                      <i class="fa-solid fa-grip-vertical me-2"></i>
+                      <i class="fa-solid fa-caret-down me-1"></i>
+                      <span class="wd-font-weight-600">Assignments</span>
+                    </div>
+                    <div class="float-end">
+                      <span
+                        class="rounded-pill wd-assignments-drop-down-heading-percent-bubble me-1"
+                        >40% of Total</span
+                      >
+                      <i class="fa-solid fa-plus me-2"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A1 SETUP</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 0 - SETUP - Week starting on Monday September 5th
+                        (9/5/2022) Module |
+                        <br />
+                        Due Sep 18, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A2 HTML</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 1 - HTML - Week starting on Monday September 12th
+                        (9/12/2022) Module |
+                        <br />
+                        Due Sep 25, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A3 CSS</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 2 - CSS - Week starting on Monday September 19th
+                        (9/19/2022) Module |
+                        <br />
+                        Due Oct 2, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A4 BOOTSTRAP</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 3 - Bootstrap - Week starting on Monday September
+                        26th (9/26/2022) Module |
+                        <br />
+                        Due Oct 10, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A5 JavaScript</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 4 - JavaScript - Week starting on Monday October
+                        3rd (10/3/2022) Module |
+                        <br />
+                        Due Oct 10, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item"
+                  style="border-left-color: green; border-left-width: 4px"
+                >
+                  <div class="wd-flex">
+                    <i class="fa-solid fa-grip-vertical m-2 mt-4 wd-inline"></i>
+                    <i
+                      class="fa-solid fa-file-pen wd-color-green m-2 mt-4 wd-inline"
+                    ></i>
+                    <div class="wd-inline wd-flex-grow-1">
+                      <a href="edit.html" class="wd-black-no-under-links"
+                        ><h5 class="pb-0 mb-0">A6 REACT</h5></a
+                      >
+                      <span class="wd-font-x-small">
+                        Week 5 - React & Routing - Week starting on Monday
+                        October 10th (10/10/2022) Module |
+                        <br />
+                        Due Oct 23, 2022 at 11:59pm | 100 pts
+                      </span>
+                    </div>
+                    <div class="mt-4 float-end">
+                      <i
+                        class="fa-solid fa-circle-check wd-color-green me-3"
+                      ></i>
+                      <i class="fa-solid fa-ellipsis-vertical me-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>
