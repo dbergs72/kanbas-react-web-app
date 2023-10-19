@@ -1,5 +1,6 @@
 import db from "../Database";
 import { useParams } from "react-router-dom";
+import "./styles.css";
 
 function GradesTable() {
   const { courseId } = useParams();
@@ -12,7 +13,7 @@ function GradesTable() {
   return (
     <div>
       <div className="table-responsive">
-        <table className="table">
+        <table className="table table-striped table-bordered">
           <thead>
             <th>Student Name</th>
             {assignments.map((assignment) => (

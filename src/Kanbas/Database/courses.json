@@ -13,7 +13,7 @@
     "number": "RS4560",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "color": "red"
+    "color": "blue"
   },
   {
     "_id": "RS103",
@@ -39,29 +39,5 @@
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
     "color": "green"
-  },
-  {
-    "_id": "RS106",
-    "name": "Organic Behavior for Aliens",
-    "number": "RS4600",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
-    "color": "blue"
-  },
-  {
-    "_id": "RS107",
-    "name": "Theory of Comp for Space",
-    "number": "RS4610",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
-    "color": "blue"
-  },
-  {
-    "_id": "RS108",
-    "name": "Web Dev for Space",
-    "number": "RS4620",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-23",
-    "color": "black"
   }
 ]
