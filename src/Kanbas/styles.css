@@ -5,3 +5,37 @@
 .wd-color-kanbas-red {
   color: #c33234;
 }
+
+@media (max-width: 1050px) {
+  .wd-home-status-menu {
+    display: none;
+  }
+}
+
+.wd-courses-main-content {
+  left: 234px;
+  top: 50px;
+  z-index: 1;
+}
+
+.wd-hidden-top-bar {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .wd-home-status-menu {
+    display: none;
+  }
+  .wd-kanbas-nav-menu {
+    display: none;
+  }
+  .wd-courses-side-nav-and-breadcrumb {
+    display: none;
+  }
+  .wd-courses-main-content {
+    left: 0;
+  }
+  .wd-hidden-top-bar {
+    display: block;
+  }
+}

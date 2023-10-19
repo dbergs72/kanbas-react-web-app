@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import db from "../Database";
 
 function BreadCrumb() {
-  const { courseId, assignmentId } = useParams();
+  const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
   const links = [
     "Home",

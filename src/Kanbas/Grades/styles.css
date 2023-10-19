@@ -1,14 +1,14 @@
 .wd-grades-table .table .thead .th {
-    color: #c33234;
+  color: #c33234;
 }
 
 .wd-grades-table > table > tbody > tr > td {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 #wd-grades-table-student {
-    color: #c33234;
-    text-align: left;
-    justify-content: left;
+  color: #c33234;
+  text-align: left;
+  justify-content: left;
 }
