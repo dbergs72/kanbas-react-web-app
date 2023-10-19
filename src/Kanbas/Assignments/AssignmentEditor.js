@@ -28,9 +28,7 @@ function AssignmentEditor() {
         </button>
       </div>
       <hr />
-      <label for={"assignmentTitle"} className="form-label ps-2 mb-0">
-        Assignment Name
-      </label>
+      <label className="form-label ps-2 mb-0">Assignment Name</label>
       <input
         id={"assignmentTitle"}
         className="form-control"

@@ -5,7 +5,6 @@ import db from "../Database";
 
 function BreadCrumb() {
   const { courseId, assignmentId } = useParams();
-  console.log(useParams());
   const course = db.courses.find((course) => course._id === courseId);
   const links = [
     "Home",
@@ -54,6 +53,7 @@ function BreadCrumb() {
             className={`breadcrumb-item ${
               assignmentID === undefined && "active"
             }`}
+            key={index}
           >
             {crumb}
           </li>
