@@ -1,5 +1,5 @@
-import ModuleList from "../Modules/ModuleList";
-import ModuleSearchBar from "../Modules/ModuleSearchBar";
+import ModuleList from "../Courses/Modules/ModuleList";
+import ModuleSearchBar from "../Courses/Modules/ModuleSearchBar";
 import StatusBar from "./StatusBar";
 import "../styles.css";
 
