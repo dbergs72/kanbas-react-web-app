@@ -4,9 +4,38 @@ import "./style.css";
 import "../styles.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdFindInPage } from "react-icons/md";
+import { useState } from "react";
 
 function Dashboard() {
-  const courses = db.courses;
+  const [courses, setCourses] = useState(db.courses);
+  const [course, setCourse] = useState({
+    name: "New Course",
+    number: "New Number",
+    startDate: "2023-01-10",
+    endDate: "2023-05-15",
+    color: "blue",
+  });
+  const addNewCourse = () => {
+    setCourses([
+      ...courses,
+      { ...course, _id: new Date().getTime().toString() },
+    ]);
+  };
+  const deleteCourse = (courseId) => {
+    setCourses(courses.filter((course) => course._id !== courseId));
+  };
+  const updateCourse = () => {
+    setCourses(
+      courses.map((c) => {
+        if (c._id === course._id) {
+          return course;
+        } else {
+          return c;
+        }
+      }),
+    );
+  };
+
   return (
     <div>
       <div className="d-flex flex-column ps-2">
@@ -17,6 +46,41 @@ function Dashboard() {
         <div className={"ps-4"}>
           <span className="wd-dashboard-subheader">Published Courses (24)</span>
           <hr className="mt-0" />
+          <div className={"mb-2"} style={{ width: 300 }}>
+            <input
+              value={course.name}
+              className="form-control"
+              onChange={(e) => setCourse({ ...course, name: e.target.value })}
+            />
+            <input
+              value={course.number}
+              className="form-control"
+              onChange={(e) => setCourse({ ...course, number: e.target.value })}
+            />
+            <input
+              value={course.startDate}
+              className="form-control"
+              type="date"
+              onChange={(e) =>
+                setCourse({ ...course, startDate: e.target.value })
+              }
+            />
+            <input
+              value={course.endDate}
+              a
+              className="form-control"
+              type="date"
+              onChange={(e) =>
+                setCourse({ ...course, endDate: e.target.value })
+              }
+            />
+            <button className={"btn btn-light"} onClick={updateCourse}>
+              Update
+            </button>
+            <button className={"btn btn-success"} onClick={addNewCourse}>
+              Add
+            </button>
+          </div>
           <div className="d-flex flex-wrap">
             {courses.map((course, index) => (
               <Link
@@ -46,6 +110,26 @@ function Dashboard() {
                     202410_1 Fall 2023 Semester Full Term
                   </div>
                   <MdFindInPage size={20} />
+                  <button
+                    className={"btn btn-danger btn-sm p-1 mt-3"}
+                    style={{ float: "right" }}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      deleteCourse(course._id);
+                    }}
+                  >
+                    Delete
+                  </button>
+                  <button
+                    className={"btn btn-light btn-sm p-1 mt-3"}
+                    style={{ float: "right" }}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setCourse(course);
+                    }}
+                  >
+                    Edit
+                  </button>
                 </div>
               </Link>
             ))}
