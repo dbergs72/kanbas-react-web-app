@@ -8,11 +8,11 @@ import "../styles.css";
 import BreadCrumb from "./BreadCrumb";
 import Grades from "../Grades";
 
-function Courses() {
+function Courses({ courses }) {
   return (
     <div className={"ps-2"}>
       <div className={"wd-courses-side-nav-and-breadcrumb"}>
-        <BreadCrumb />
+        <BreadCrumb courses={courses} />
         <hr />
         <CourseNavigation />
       </div>
