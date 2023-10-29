@@ -1,6 +1,7 @@
 import { FaGripLines } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import { useParams } from "react-router";
+import "../styles.css";
 
 function BreadCrumb({ courses }) {
   const { courseId } = useParams();
@@ -24,7 +25,7 @@ function BreadCrumb({ courses }) {
     "Settings",
   ];
   const { pathname } = useLocation();
-  const pathItems = pathname.split("/");
+  const pathItems = pathname.split("/").map((item) => decodeURIComponent(item));
   let crumbs = [];
   let assignmentID = undefined;
   for (let i = pathItems.indexOf("Courses"); i < pathItems.length; i++) {
@@ -45,7 +46,9 @@ function BreadCrumb({ courses }) {
       />
       <ol className="breadcrumb pt-2 ps-4 mb-0">
         {course !== undefined && (
-          <li className="breadcrumb-item wd-kanbas-red">{course._id}</li>
+          <li className="breadcrumb-item">
+            <span className={"wd-color-kanbas-red"}>{course.name}</span>
+          </li>
         )}
         {crumbs.map((crumb, index) => (
           <li
@@ -54,7 +57,13 @@ function BreadCrumb({ courses }) {
             }`}
             key={index}
           >
-            {crumb}
+            <span
+              className={`${
+                assignmentID !== undefined && "wd-color-kanbas-red"
+              }`}
+            >
+              {crumb}
+            </span>
           </li>
         ))}
         {assignmentID !== undefined && (

@@ -1,8 +1,21 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import React from "react";
+import { Link, useParams } from "react-router-dom";
+import { setAssignment } from "./assignmentsReducer";
+import { useDispatch } from "react-redux";
 
 function AssignmentSearchBar() {
+  const { courseId } = useParams();
+  const base_assignment = {
+    title: "New Module",
+    course: courseId,
+    description: "New Description",
+    dueDate: "2021-10-10",
+    availableFrom: "2021-10-10",
+    until: "2021-10-10",
+  };
+  const dispatch = useDispatch();
   return (
     <div className={"container pt-2"}>
       <div className={"row"}>
@@ -19,10 +32,16 @@ function AssignmentSearchBar() {
               <AiOutlinePlus className={"mb-1"} />
               Group
             </button>
-            <button className="btn btn-danger">
+            <Link
+              className="btn btn-danger"
+              to={`./Assignment Editor`}
+              onClick={() => {
+                dispatch(setAssignment(base_assignment));
+              }}
+            >
               <AiOutlinePlus className={"mb-1"} />
               Assignment
-            </button>
+            </Link>
             <button className="btn btn-light">
               <BsThreeDotsVertical className={"mb-1"} />
             </button>

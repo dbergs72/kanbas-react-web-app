@@ -3,6 +3,12 @@ import "./style.css";
 import "../styles.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdFindInPage } from "react-icons/md";
+import {
+  addModule,
+  setModule,
+  updateModule,
+} from "../Courses/Modules/modulesReducer";
+import React from "react";
 
 function Dashboard({
   courses,
@@ -23,39 +29,58 @@ function Dashboard({
           <span className="wd-dashboard-subheader">Published Courses (24)</span>
           <hr className="mt-0" />
           <div className={"mb-2"} style={{ width: 300 }}>
-            <input
-              value={course.name}
-              className="form-control"
-              onChange={(e) => setCourse({ ...course, name: e.target.value })}
-            />
-            <input
-              value={course.number}
-              className="form-control"
-              onChange={(e) => setCourse({ ...course, number: e.target.value })}
-            />
-            <input
-              value={course.startDate}
-              className="form-control"
-              type="date"
-              onChange={(e) =>
-                setCourse({ ...course, startDate: e.target.value })
-              }
-            />
-            <input
-              value={course.endDate}
-              a
-              className="form-control"
-              type="date"
-              onChange={(e) =>
-                setCourse({ ...course, endDate: e.target.value })
-              }
-            />
-            <button className={"btn btn-light"} onClick={updateCourse}>
-              Update
-            </button>
-            <button className={"btn btn-success"} onClick={addNewCourse}>
-              Add
-            </button>
+            <ul
+              className={"list-group"}
+              style={{ width: 400, textAlign: "right" }}
+            >
+              <li className={"list-group-item d-flex"}>
+                <div className={"flex-grow-1"}>
+                  <input
+                    value={course.name}
+                    className="form-control"
+                    onChange={(e) =>
+                      setCourse({ ...course, name: e.target.value })
+                    }
+                  />
+                  <input
+                    value={course.number}
+                    className="form-control mt-2"
+                    onChange={(e) =>
+                      setCourse({ ...course, number: e.target.value })
+                    }
+                  />
+                  <input
+                    value={course.startDate}
+                    className="form-control mt-2"
+                    type="date"
+                    onChange={(e) =>
+                      setCourse({ ...course, startDate: e.target.value })
+                    }
+                  />
+                  <input
+                    value={course.endDate}
+                    a
+                    className="form-control mt-2"
+                    type="date"
+                    onChange={(e) =>
+                      setCourse({ ...course, endDate: e.target.value })
+                    }
+                  />
+                </div>
+                <div className={"ms-2"}>
+                  <button className={"btn btn-success"} onClick={addNewCourse}>
+                    Add
+                  </button>
+                  <br />
+                  <button
+                    className={"btn btn-light mt-2"}
+                    onClick={updateCourse}
+                  >
+                    Update
+                  </button>
+                </div>
+              </li>
+            </ul>
           </div>
           <div className="d-flex flex-wrap">
             {courses.map((course, index) => (
