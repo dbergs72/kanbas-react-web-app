@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import "./styles.css";
@@ -8,13 +8,28 @@ import {
   deleteModule,
   updateModule,
   setModule,
-} from "./modulesReducer";
+  setModules,
+} from "./reducer";
+import { createModule, findModulesForCourse } from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    findModulesForCourse(courseId).then((modules) =>
+      dispatch(setModules(modules)),
+    );
+  }, [courseId]);
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
+
   return (
     <div>
       <ul className={"list-group"} style={{ width: 400, textAlign: "right" }}>
@@ -51,7 +66,7 @@ function ModuleList() {
             <button
               className={"btn btn-success"}
               onClick={() => {
-                dispatch(addModule({ ...module, course: courseId }));
+                handleAddModule();
               }}
             >
               Add
