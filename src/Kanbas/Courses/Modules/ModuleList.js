@@ -10,20 +10,26 @@ import {
   setModule,
   setModules,
 } from "./reducer";
-import { createModule, findModulesForCourse } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
   const dispatch = useDispatch();
   useEffect(() => {
-    findModulesForCourse(courseId).then((modules) =>
-      dispatch(setModules(modules)),
-    );
+    client
+      .findModulesForCourse(courseId)
+      .then((modules) => dispatch(setModules(modules)));
   }, [courseId]);
 
   const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
+    client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
     });
   };
 
