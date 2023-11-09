@@ -3,11 +3,6 @@ import "./style.css";
 import "../styles.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdFindInPage } from "react-icons/md";
-import {
-  addModule,
-  setModule,
-  updateModule,
-} from "../Courses/Modules/modulesReducer";
 import React from "react";
 
 function Dashboard({
@@ -59,7 +54,6 @@ function Dashboard({
                   />
                   <input
                     value={course.endDate}
-                    a
                     className="form-control mt-2"
                     type="date"
                     onChange={(e) =>
@@ -91,7 +85,9 @@ function Dashboard({
               >
                 <div
                   className="wd-card-image"
-                  style={{ backgroundColor: course.color }}
+                  style={{
+                    backgroundColor: `${course.color ? course.color : "blue"}`,
+                  }}
                 >
                   <BsThreeDotsVertical
                     className={"wd-card-eclipses-vertical"}
