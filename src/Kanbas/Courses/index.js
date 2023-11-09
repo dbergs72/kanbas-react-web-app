@@ -1,5 +1,5 @@
 import CourseNavigation from "../CourseNavigation";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import Modules from "./Modules";
 import Home from "../Home";
 import Assignments from "./Assignments";
@@ -7,12 +7,26 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import "../styles.css";
 import BreadCrumb from "./BreadCrumb";
 import Grades from "../Grades";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
+  const URL = "http://localhost:4000/api/courses";
+  const { courseId } = useParams();
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+  console.log(course);
+
   return (
     <div className={"ps-2"}>
       <div className={"wd-courses-side-nav-and-breadcrumb"}>
-        <BreadCrumb courses={courses} />
+        <BreadCrumb course={course} />
         <hr />
         <CourseNavigation />
       </div>

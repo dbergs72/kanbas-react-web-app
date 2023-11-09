@@ -3,9 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useParams } from "react-router";
 import "../styles.css";
 
-function BreadCrumb({ courses }) {
-  const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+function BreadCrumb({ course }) {
   const links = [
     "Home",
     "Modules",
