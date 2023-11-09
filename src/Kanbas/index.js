@@ -32,11 +32,11 @@ function Kanbas() {
     setCourse({ name: "" });
   };
   const deleteCourse = async (courseId) => {
-    const response = await axios.delete(`${URL}/${courseId}`);
+    await axios.delete(`${URL}/${courseId}`);
     setCourses(courses.filter((course) => course._id !== courseId));
   };
   const updateCourse = async () => {
-    const response = await axios.put(`${URL}/${course._id}`, course);
+    await axios.put(`${URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
