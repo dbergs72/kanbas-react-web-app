@@ -21,16 +21,21 @@ function ModuleList() {
       .then((modules) => dispatch(setModules(modules)));
   }, [courseId]);
 
-  const handleAddModule = () => {
-    client.createModule(courseId, module).then((module) => {
+  const handleAddModule = async () => {
+    await client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
     });
   };
 
-  const handleDeleteModule = (moduleId) => {
-    client.deleteModule(moduleId).then((status) => {
+  const handleDeleteModule = async (moduleId) => {
+    await client.deleteModule(moduleId).then((status) => {
       dispatch(deleteModule(moduleId));
     });
+  };
+
+  const handleUpdateModule = async () => {
+    await client.updateModule(module);
+    dispatch(updateModule(module));
   };
 
   const modules = useSelector((state) => state.modulesReducer.modules);
@@ -81,7 +86,7 @@ function ModuleList() {
             <button
               className={"btn btn-light mt-2"}
               onClick={() => {
-                dispatch(updateModule(module));
+                handleUpdateModule();
               }}
             >
               Update
@@ -113,7 +118,7 @@ function ModuleList() {
                   </button>
                   <button
                     className={"btn btn-danger"}
-                    onClick={() => dispatch(deleteModule(module._id))}
+                    onClick={() => handleDeleteModule(module._id)}
                   >
                     Delete
                   </button>
