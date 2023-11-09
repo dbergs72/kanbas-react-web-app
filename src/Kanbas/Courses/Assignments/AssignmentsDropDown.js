@@ -4,16 +4,33 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { Link, useParams } from "react-router-dom";
 import { MdFindInPage } from "react-icons/md";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteAssignment, setAssignment } from "./assignmentsReducer";
+import {
+  deleteAssignment,
+  setAssignment,
+  setAssignments,
+} from "./assignmentsReducer";
+import * as client from "./client";
 
 function AssignmentsDropDown() {
   const dispatch = useDispatch();
   const { courseId } = useParams();
+  useEffect(() => {
+    client.findAssignmentsForCourse(courseId).then((assignments) => {
+      dispatch(setAssignments(assignments));
+    });
+  }, [courseId]);
+
+  const handleDeleteAssignment = async (assignmentId) => {
+    await client.deleteAssignment(assignmentId).then((status) => {
+      dispatch(deleteAssignment(assignmentId));
+    });
+  };
+
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments,
-  ).filter((assignment) => assignment.course === courseId);
+  );
 
   return (
     <div className="list-group">
@@ -117,7 +134,7 @@ function AssignmentsDropDown() {
                     "Are you sure you want to delete this assignment?",
                   )
                 ) {
-                  dispatch(deleteAssignment(assignment._id));
+                  handleDeleteAssignment(assignment._id);
                 }
               }}
             >
