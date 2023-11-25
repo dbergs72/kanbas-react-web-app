@@ -1,6 +1,5 @@
 import { FaGripLines } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
-import { useParams } from "react-router";
 import "../styles.css";
 
 function BreadCrumb({ course }) {

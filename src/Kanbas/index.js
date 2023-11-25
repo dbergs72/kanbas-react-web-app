@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Provider } from "react-redux";
 import store from "./store";
 import axios from "axios";
+import Signin from "./users/signin";
 
 function Kanbas() {
   const [course, setCourse] = useState({
@@ -64,6 +65,7 @@ function Kanbas() {
           <div className={"w-100"} id={"wd-kanbas-sub-screen"}>
             <Routes>
               <Route path="/" element={<Navigate to={"Dashboard"} />} />
+              <Route path="/signin" element={<Signin />} />
               <Route path="Account" element={<h1>Account</h1>} />
               <Route
                 path="Dashboard"

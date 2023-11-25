@@ -21,7 +21,7 @@ function Dashboard({
           <hr className="mt-0" />
         </div>
         <div className={"ps-4"}>
-          <span className="wd-dashboard-subheader">Published Courses (24)</span>
+          <span className="wd-dashboard-subheader">Published Courses</span>
           <hr className="mt-0" />
           <div className={"mb-2"} style={{ width: 300 }}>
             <ul
