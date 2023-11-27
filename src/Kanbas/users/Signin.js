@@ -9,7 +9,7 @@ function Signin() {
   const navigate = useNavigate();
   const signIn = async () => {
     await client.signin(credentials);
-    navigate("/Kanbas/Login/Account");
+    navigate("/Kanbas/Account");
   };
   return (
     <div className={"form-group w-25"}>

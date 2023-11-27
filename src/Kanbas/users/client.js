@@ -15,8 +15,8 @@ export const signup = async (credentials) => {
 };
 
 export const account = async () => {
-  console.log(`${BASE_API}/account is the endpoint`);
-  const response = await axios.get(`${USERS_API}/account`);
+  const response = await axios.post(`${USERS_API}/account`);
+  console.log(response.data);
   return response.data;
 };
 
@@ -27,5 +27,15 @@ export const updateUser = async (user) => {
 
 export const findAllUsers = async () => {
   const response = await axios.get(`${USERS_API}`);
+  return response.data;
+};
+
+export const createUser = async (user) => {
+  const response = await axios.post(`${USERS_API}`, user);
+  return response.data;
+};
+
+export const findUserById = async (userId) => {
+  const response = await axios.get(`${USERS_API}/${userId}`);
   return response.data;
 };
