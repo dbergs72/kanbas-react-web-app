@@ -9,6 +9,7 @@ import {
 function UserTable() {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({
+    _id: Date.now(),
     username: "",
     password: "",
     firstName: "",
@@ -19,7 +20,7 @@ function UserTable() {
   });
   const selectUser = async (usr) => {
     try {
-      console.log("The user id is " + JSON.stringify(usr));
+      console.log(JSON.stringify(usr));
       const u = await client.findUserById(usr._id);
       setUser(u);
     } catch (err) {
@@ -36,6 +37,7 @@ function UserTable() {
   };
   const createUser = async () => {
     try {
+      user._id = Date.now();
       const newUser = await client.createUser(user);
       setUsers([newUser, ...users]);
     } catch (err) {
