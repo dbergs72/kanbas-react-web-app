@@ -70,6 +70,7 @@ function Kanbas() {
               <Route path="Admin/Users" element={<UserTable />} />
               <Route path="Login/*" element={<LoggingInFeatures />} />
               <Route path="Account" element={<Account />} />
+              <Route path="Account/:id" element={<Account />} />
               <Route
                 path="Dashboard"
                 element={

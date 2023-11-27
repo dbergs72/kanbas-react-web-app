@@ -1,9 +1,14 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Account() {
+  const { id } = useParams();
   const [account, setAccount] = useState(null);
+  const findUserById = async (id) => {
+    const user = await client.findUserById(id);
+    setAccount(user);
+  };
   const save = async () => {
     await client.updateUser(account);
   };
@@ -13,7 +18,11 @@ function Account() {
     setAccount(account);
   };
   useEffect(() => {
-    fetchAccount();
+    if (id) {
+      findUserById(id);
+    } else {
+      fetchAccount();
+    }
   }, []);
   console.log("The account is: " + account);
   return (
