@@ -11,9 +11,11 @@ import {
 } from "react-icons/ai";
 import { FaComputer } from "react-icons/fa6";
 import { BsSquare } from "react-icons/bs";
+import { SlLogin } from "react-icons/sl";
 
 function KanbasNavigation() {
   const links_two = [
+    { icon: <SlLogin size={30} />, link: "Login" },
     { icon: <MdAccountCircle size={40} />, link: "Account" },
     { icon: <RiDashboard3Line size={40} />, link: "Dashboard" },
     { icon: <BiBook size={40} />, link: "Courses" },
@@ -25,17 +27,6 @@ function KanbasNavigation() {
     { icon: <AiOutlineQuestion size={40} />, link: "Help" },
   ];
 
-  const links = [
-    { icon: "MdAccountCircle", title: "Account" },
-    "Dashboard",
-    "Courses",
-    "Calendar",
-    "Inbox",
-    "History",
-    "Studio",
-    "Commons",
-    "Help",
-  ];
   const { pathname } = useLocation();
   return (
     <div className={"list-group position-fixed bottom-0"} id={"wd-nav-bar"}>
