@@ -4,6 +4,7 @@ import {
   BsFillCheckCircleFill,
   BsPencil,
   BsPlusCircleFill,
+  BsTrash3Fill,
 } from "react-icons/bs";
 
 function UserTable() {
@@ -18,6 +19,17 @@ function UserTable() {
     email: "",
     role: "USER",
   });
+  const deleteUser = async (usr) => {
+    try {
+      console.log("Deleting user " + usr._id);
+      await client.deleteUser(usr._id);
+      console.log("Deleted user " + usr._id);
+      setUsers(users.filter((u) => u._id !== usr._id));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const selectUser = async (usr) => {
     try {
       console.log(JSON.stringify(usr));
@@ -128,6 +140,12 @@ function UserTable() {
               <td className={"text-nowrap"}>
                 <button className="btn btn-warning me-2">
                   <BsPencil onClick={() => selectUser(usr)} />
+                </button>
+                <button
+                  className={"btn btn-danger"}
+                  onClick={() => deleteUser(usr)}
+                >
+                  <BsTrash3Fill />
                 </button>
               </td>
             </tr>
