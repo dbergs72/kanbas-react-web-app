@@ -31,6 +31,7 @@ function Signup() {
             username: e.target.value,
           })
         }
+        placeholder={"username"}
         className={"form-control"}
       />
       <input
@@ -41,6 +42,7 @@ function Signup() {
             password: e.target.value,
           })
         }
+        placeholder={"password"}
         className={"form-control"}
         type={"password"}
       />
