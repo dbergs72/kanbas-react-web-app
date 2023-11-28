@@ -36,6 +36,7 @@ function Account() {
               setAccount({ ...account, password: e.target.value })
             }
             className={"form-control"}
+            placeholder={"Password"}
           />
           <input
             value={account.firstName}
@@ -43,6 +44,7 @@ function Account() {
               setAccount({ ...account, firstName: e.target.value })
             }
             className={"form-control"}
+            placeholder={"First Name"}
           />
           <input
             value={account.lastName}
@@ -50,20 +52,24 @@ function Account() {
               setAccount({ ...account, lastName: e.target.value })
             }
             className={"form-control"}
+            placeholder={"Last Name"}
           />
           <input
             value={account.dob}
             onChange={(e) => setAccount({ ...account, dob: e.target.value })}
             className={"form-control"}
+            placeholder={"Date of Birth"}
           />
           <input
             value={account.email}
             onChange={(e) => setAccount({ ...account, email: e.target.value })}
             className={"form-control"}
+            placeholder={"Email"}
           />
           <select
             onChange={(e) => setAccount({ ...account, role: e.target.value })}
             className={"form-control"}
+            value={account.role}
           >
             <option value="USER">User</option>
             <option value="ADMIN">Admin</option>

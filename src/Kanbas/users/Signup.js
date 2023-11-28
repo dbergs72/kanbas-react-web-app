@@ -5,19 +5,18 @@ import * as client from "./client";
 function Signup() {
   const [error, setError] = useState("");
   const [credentials, setCredentials] = useState({
+    _id: Date.now(),
     username: "",
     password: "",
   });
   const navigate = useNavigate();
   const signup = async () => {
     try {
-      console.log(credentials);
+      console.log("Signing up");
       await client.signup(credentials);
-      console.log("here2");
-      navigate("/Kanbas/Login/Account");
+      navigate("/Kanbas/Account");
     } catch (err) {
-      console.log("here3");
-      setError(err.response.data.message);
+      setError(err.response.data);
     }
   };
   return (
@@ -45,7 +44,7 @@ function Signup() {
         className={"form-control"}
         type={"password"}
       />
-      <button onClick={signup} className={"form-control btn btn-primary"}>
+      <button onClick={signup} className={"btn btn-success w-100"}>
         Signup
       </button>
     </div>
